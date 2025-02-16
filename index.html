@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Deniz Özdemir - CV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: #4a5568;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: #2d3748;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Education Styles */
+        .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Experience Styles */
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .role {
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .date {
+            color: #718096;
+        }
+
+        /* List Styles */
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #4a5568;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .skill-category {
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category strong {
+            color: #2d3748;
+            margin-right: 0.5rem;
+        }
+
+        /* Certifications */
+        .certifications {
+            line-height: 1.8;
+            color: #4a5568;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .education-header, .experience-header {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Onur Deniz Özdemir</h1>
+            <div class="contact-info">
+                <a href="mailto:onurdenizozdemir@icloud.com">
+                    <i class="far fa-envelope"></i>
+                    onurdenizozdemir@icloud.com
+                </a>
+                <a href="tel:+905535431824">
+                    <i class="fas fa-phone"></i>
+                    +90 553 543 18 24
+                </a>
+                <a href="https://linkedin.com/in/onur-deniz-ozdemir" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </header>
+
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Galatasaray University</h3>
+                    <span class="date">Istanbul, Turkey</span>
+                </div>
+                <div>
+                    <p>BS, Industrial Engineering (GPA: 3.59) | 2021 – Present</p>
+                    <p>BS, Computer Engineering (Double Major) (GPA: 3.31) | 2023 – Present</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Bursa Erkek Lisesi</h3>
+                    <span class="date">Bursa, Turkey</span>
+                </div>
+                <p>Ranked 292nd in Higher Education Institutions Exam (Jun. 2021)</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>YAZAKI</h3>
+                    <span class="date">Bursa, Turkey</span>
+                </div>
+                <div class="experience-header">
+                    <span class="role">Industrial Engineering Production Intern</span>
+                    <span class="date">Jul. 2024</span>
+                </div>
+                <ul>
+                    <li>Conducted an efficiency improvement project for a production line using time & motion studies, Lean Manufacturing, Kaizen, 5S, SAP ERP, and FMEA.</li>
+                    <li>Gained hands-on experience in Production Management, Production Planning, Logistics, Supply Chain, Project Planning, and Sustainability.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Leadership & Activities Section -->
+        <section>
+            <h2>Leadership & Activities</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Galatasaray University IEEE Student Branch</h3>
+                    <span class="date">Istanbul, Turkey</span>
+                </div>
+                <div class="experience-header">
+                    <span class="role">President</span>
+                    <span class="date">Jun. 2023 – Present</span>
+                </div>
+                <ul>
+                    <li>Led a student branch with 300+ members, ensuring active participation and continuous growth.</li>
+                    <li>Managed communication with various companies for events and long-term relations.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Google AI and Technology Academy</h3>
+                </div>
+                <div class="experience-header">
+                    <span class="role">Trainee</span>
+                    <span class="date">Nov. 2024 – Present</span>
+                </div>
+                <ul>
+                    <li>Selected among 2,000 scholars from over 25,000 applicants.</li>
+                    <li>Undergoing 500+ hours of training in AI, Data Science, Machine Learning, Project Management and more.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>CASE @ NTT DATA: Challenge Accepted!</h3>
+                    <span class="date">Istanbul, Turkey</span>
+                </div>
+                <div class="experience-header">
+                    <span class="role">Runner Up</span>
+                    <span class="date">Dec. 2024</span>
+                </div>
+                <ul>
+                    <li>Developed a sustainable, data-driven resource allocation solution in a 3-hour challenge, integrating emerging technologies to optimize performance in a highly competitive setting.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>The Scientific and Technological Research Council of Turkey</h3>
+                    <span class="date">Bursa, Turkey</span>
+                </div>
+                <div class="experience-header">
+                    <span class="role">Research Project Student</span>
+                    <span class="date">2019 & 2020</span>
+                </div>
+                <ul>
+                    <li>Developed 2 research projects on the subjects "Maglev technology, transportation and adaptation on bikes." in 2020 and "Self-powered computer mouses with kinetic energy" in 2019 within the 2204-A program.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Language:</strong>
+                    <span>English (C1), French (B2), German (Basic), Turkish (Native)</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Programming:</strong>
+                    <span>Python, C, MATLAB, SQL, JavaScript</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Technical:</strong>
+                    <span>Microsoft Excel, Word, PowerPoint, Access, PowerBI, SQL Server & SQL Server Management Studio; Apache Kafka, Spark, and Hadoop; Google Cloud, SAP ERP, AutoCAD, Adobe Creative Cloud</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section>
+            <h2>Certifications</h2>
+            <p class="certifications">
+                DELF B2 French Language Diploma, Cisco Computer Networking Basics, Cisco Introduction to Data Science, Miuul Python for Data Science, Machine Learning, and Feature Engineering, Akbank Cybersecurity 101, Google Project Management Certificate (In Progress)
+            </p>
+        </section>
+    </div>
+</body>
+</html>
