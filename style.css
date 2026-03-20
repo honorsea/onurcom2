@@ -1,0 +1,393 @@
+/* ============================================================
+   DESIGN TOKENS — Material Design 3 Expressive Tonal Palette
+   ============================================================ */
+:root {
+    --md-sys-color-primary:      #2c3f5b;
+    --md-sys-color-on-primary:   #ffffff;
+    --md-sys-color-secondary:    #9caac2;
+    --accent:                    #cc5544; 
+
+    --surface:          #ffffff;   
+    --surface-dim:      #f4f7f9;      
+    --surface-container:#eef2f6;   
+    --surface-tint:     #e3e9f0;   
+    --surface-tint-hi:  #d5dee8;   
+    
+    --skill-card-bg:    #ffffff;   
+    --skill-badge-bg:   #f4f7f9;   
+
+    --on-surface:       #223553;   
+    --on-surface-var:   #5c6e8a;   
+    --icon-color:       var(--md-sys-color-primary);
+
+    --outline:          #9caac2;   
+    --outline-var:      #d1d8e3;   
+    
+    --backdrop-bg:      rgba(34, 53, 83, 0.3); 
+    --sidebar-w:        35%;
+    --modal-speed:      0.22s;
+    --font:             'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+:root[data-theme="dark"] {
+    --surface:          #141f30; 
+    --surface-dim:      #1a283e; 
+    --surface-container:#223553; 
+    --surface-tint:     #2c3f5b; 
+    --surface-tint-hi:  #3a5070; 
+    
+    --skill-card-bg:    #1c2b42; 
+    --skill-badge-bg:   #223553; 
+
+    --on-surface:       #ecf0f5; 
+    --on-surface-var:   #9caac2; 
+    --icon-color:       #ecf0f5; 
+
+    --outline:          #5c6e8a; 
+    --outline-var:      #3a5070; 
+    
+    --accent:           #e86b6b; 
+    --backdrop-bg:      rgba(255, 255, 255, 0.12); 
+}
+
+::selection { background-color: var(--accent); color: #ffffff; }
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: linear-gradient(to right, var(--surface-dim) var(--sidebar-w), var(--surface) var(--sidebar-w)); color: var(--on-surface); font-family: var(--font); line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+.name, .section-title { font-family: 'Outfit', var(--font); }
+.title-primary, .title-secondary { font-family: 'Outfit', var(--font); }
+
+/* ============================================================
+   ENTRY ANIMATIONS
+   ============================================================ */
+@keyframes fade-right { from { opacity: 0; transform: translateX(-14px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes cascade-down { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.layout-container { display: grid; grid-template-columns: var(--sidebar-w) minmax(0, 1fr); width: 100%; min-height: 100vh; }
+
+/* ============================================================
+   SIDEBAR & PROFILE
+   ============================================================ */
+.sidebar { background-color: transparent; padding: 3rem 2.5rem; position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; gap: 1.4rem; animation: fade-right 0.55s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.profile-section { display: flex; align-items: center; gap: 1.5rem; align-self: center; }
+
+.profile-mask-wrapper {
+    width: 180px; 
+    height: 180px;
+    flex-shrink: 0;
+    -webkit-mask-image: url(star.svg); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;
+    mask-image: url(star.svg); mask-size: contain; mask-repeat: no-repeat; mask-position: center;
+    transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1); will-change: transform; 
+}
+.profile-img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1); will-change: transform; }
+.profile-mask-wrapper:hover { transform: rotate(180deg); }
+.profile-mask-wrapper:hover .profile-img { transform: rotate(-180deg); }
+
+.name { font-size: 3rem; line-height: 1.05; font-weight: 700; letter-spacing: -0.02em; max-width: min-content; }
+
+/* ============================================================
+   SUMMARY + UNIFIED CONTACT GRID
+   ============================================================ */
+.summary-contact { display: flex; flex-direction: column; gap: 1.4rem; }
+.summary { font-size: 0.95rem; color: var(--on-surface); text-align: justify; line-height: 1.6; }
+
+/* Desktop 12-Column Grid Lock */
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 52px; /* 4 fluid columns + exactly 52px for the square button */
+    gap: 0.6rem;
+}
+
+/* Explicit Grid Areas for Desktop */
+.email-btn { grid-column: 1 / 5; grid-row: 1; }
+.theme-btn { grid-column: 5 / 6; grid-row: 1; }
+.lang-mobile-btn { display: none !important; } /* Force hide against .contact-btn flex */
+
+.phone-btn { grid-column: 1 / 4; grid-row: 2; } /* Wider */
+.resume-btn { grid-column: 4 / 6; grid-row: 2; }
+
+.linkedin-btn { grid-column: 1 / 3; grid-row: 3; }
+.lang-desktop-btn { grid-column: 3 / 6; grid-row: 3; } /* Segmented takes majority space */
+
+.contact-btn {
+    display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background-color: var(--surface-tint); color: var(--on-surface);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    overflow: hidden; white-space: nowrap; min-width: 0; cursor: pointer; border: none; font-family: inherit;
+    height: 52px; box-shadow: none; 
+}
+
+.pill-shape { border-radius: 100px; padding: 0 1.2rem; }
+.squircle-shape { border-radius: 16px; padding: 0; } 
+
+.contact-btn .material-symbols, .contact-icon-svg { font-size: 16px; width: 16px; height: 16px; flex-shrink: 0; color: var(--icon-color); }
+.contact-btn span:last-child { overflow: hidden; text-overflow: ellipsis; min-width: 0; font-size: 0.875rem; font-weight: 500; }
+.contact-btn:hover { background-color: var(--surface-tint-hi); }
+
+.primary-accent-btn { background-color: var(--surface-tint); }
+
+/* ============================================================
+   STRICT MD3 SEGMENTED LANGUAGE CONTROL
+   ============================================================ */
+/* ============================================================
+   STRICT MD3 SEGMENTED LANGUAGE CONTROL
+   ============================================================ */
+.segmented-control {
+    display: flex;
+    border: 1px solid var(--outline); /* 1dp border */
+    border-radius: 100px; 
+    overflow: hidden;
+    background-color: var(--surface-tint); /* MATCHES other buttons */
+    height: 52px; 
+    padding: 0;
+    gap: 0;
+}
+
+.segment {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--on-surface-var);
+    background-color: transparent;
+    border-right: 1px solid var(--outline); /* 1dp vertical divider */
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 0; 
+}
+
+.segment:last-child { border-right: none; }
+
+/* INVERTED TONAL SELECTION */
+/* Light Mode: Uses Dark Navy */
+.segment.selected {
+    background-color: var(--md-sys-color-primary); 
+    color: var(--md-sys-color-on-primary); 
+    pointer-events: none;
+}
+
+/* Dark Mode: Uses Light Ice-Blue */
+:root[data-theme="dark"] .segment.selected {
+    background-color: #ced9e7; 
+    color: #223553; 
+}
+
+.segment .material-symbols, .segment .selected-icon { font-size: 16px; color: inherit; }
+.segment .selected-icon { display: none; }
+.segment.selected .selected-icon { display: block; }
+.segment:hover:not(.selected) { background-color: var(--surface-tint-hi); color: var(--on-surface); }
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+.main-content { background-color: var(--surface); padding: 3rem 3rem 3rem 2.5rem; max-width: 960px; }
+.resume-section { margin-bottom: 3.2rem; animation: cascade-down 0.7s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+.resume-section:nth-child(1) { animation-delay: 0.1s; }
+.resume-section:nth-child(2) { animation-delay: 0.2s; }
+.resume-section:nth-child(3) { animation-delay: 0.3s; }
+.resume-section:nth-child(4) { animation-delay: 0.4s; }
+.resume-section:nth-child(5) { animation-delay: 0.5s; }
+.resume-section:nth-child(6) { animation-delay: 0.6s; }
+
+.section-title {
+    font-size: 1.4rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;
+    margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem;
+    position: sticky; top: 0; z-index: 10; background-color: var(--surface); padding-top: 1rem; margin-top: -1rem;
+}
+.section-title .material-symbols-outlined { color: var(--md-sys-color-secondary); }
+.section-title::before { content: ''; position: absolute; left: 0; right: 0; bottom: -15px; height: 15px; background: linear-gradient(to bottom, var(--surface) 0%, transparent 100%); pointer-events: none; z-index: -1; }
+.section-title::after { content: ''; flex: 1; height: 1px; background-color: var(--md-sys-color-secondary); margin-left: 1rem; }
+
+/* ============================================================
+   RESUME ENTRIES & TYPOGRAPHY
+   ============================================================ */
+.resume-entry { margin-bottom: 1.3rem; }
+.entry-header { display: flex; align-items: center; gap: 0; margin-bottom: 0.5rem; }
+.entry-logo-wrap { width: 80px; height: 52px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.entry-logo { width: 52px; height: 52px; object-fit: contain; }
+:root[data-theme="dark"] .entry-logo { filter: brightness(0) invert(1); }
+.entry-titles { display: flex; flex-direction: column; gap: 0.1rem; }
+.title-primary { font-size: 1.15rem; font-weight: 500; line-height: 1.1; color: var(--on-surface); }
+.title-secondary { font-size: 1.15rem; font-weight: 500; color: var(--on-surface); line-height: 1.3; }
+
+.entry-description { background-color: var(--surface-container); padding: 0.7rem 1.1rem; border-radius: 16px; margin-top: 0.3rem; }
+.entry-description ul { padding-left: 0.9rem; color: var(--on-surface-var); font-size: 0.93rem; line-height: 1.5; }
+.entry-description li { margin-bottom: 0.3rem; }
+.entry-description strong { color: var(--on-surface); font-weight: 600; }
+
+/* ============================================================
+   BADGES (Static & Interactive)
+   ============================================================ */
+.badges-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; margin-bottom: 0.4rem; }
+.badge {
+    background-color: var(--surface-tint);
+    color: var(--on-surface);
+    padding: 0.25rem 0.8rem; 
+    border-radius: 100px; 
+    font-size: 0.92rem;
+    font-weight: 500;
+    font-family: inherit;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    
+    /* Smart Truncation */
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+button.badge, a.badge-link { cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease; }
+.badge-outlined { background-color: transparent; border-color: var(--outline); color: var(--on-surface-var); }
+.badge-outlined:hover, a.badge-link:hover { background-color: var(--accent); color: #ffffff; border-color: var(--accent); }
+.lang-level { font-size: 0.72rem; font-weight: 700; background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); padding: 0.1rem 0.45rem; border-radius: 12px; letter-spacing: 0.03em; }
+
+/* ============================================================
+   SKILLS SECTION
+   ============================================================ */
+.skills-stack { display: flex; flex-direction: column; gap: 0.75rem; }
+.skill-group { background-color: var(--skill-card-bg); border-radius: 16px; padding: 0.85rem 1.1rem; border: 1px solid var(--outline-var); }
+.skill-group-label { display: block; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--on-surface-var); margin-bottom: 0.5rem; }
+.skill-group .badges-row { margin-bottom: 0; }
+.skill-group .badge { background-color: var(--skill-badge-bg); border: 1px solid var(--outline-var); }
+
+/* ============================================================
+   MODALS
+   ============================================================ */
+@keyframes modal-in { from { opacity: 0; transform: scale(0.94) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+@keyframes modal-out { from { opacity: 1; transform: scale(1) translateY(0); } to { opacity: 0; transform: scale(0.94) translateY(10px); } }
+@keyframes backdrop-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes backdrop-out { from { opacity: 1; } to { opacity: 0; } }
+
+.custom-modal { border: none; border-radius: 28px; padding: 1.75rem; max-width: 480px; width: 90%; margin: auto; background: var(--surface); color: var(--on-surface); }
+.custom-modal[open] { animation: modal-in var(--modal-speed) cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+.custom-modal.closing { animation: modal-out var(--modal-speed) ease-in forwards; }
+.custom-modal::backdrop { background: var(--backdrop-bg); backdrop-filter: blur(4px); } 
+.custom-modal[open]::backdrop { animation: backdrop-in var(--modal-speed) ease forwards; }
+.custom-modal.closing::backdrop { animation: backdrop-out var(--modal-speed) ease forwards; }
+
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--outline-var); }
+.modal-header h3 { font-size: 1.1rem; font-weight: 600; font-family: 'Outfit', var(--font); }
+.close-btn { background: none; border: none; cursor: pointer; color: var(--on-surface-var); display: flex; align-items: center; justify-content: center; padding: 0.35rem; border-radius: 50%; transition: background-color 0.2s ease; }
+.close-btn:hover { background-color: var(--surface-tint); color: var(--on-surface); }
+
+.modal-lang-links { display: flex; flex-direction: column; gap: 0.5rem; }
+.lang-modal-link { display: flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1rem; border-radius: 12px; background: var(--surface-tint); color: var(--on-surface); font-weight: 500; transition: background-color 0.2s; }
+.lang-modal-link:hover { background: var(--surface-tint-hi); }
+.lang-modal-link.active { background: var(--surface-tint-hi); pointer-events: none; font-weight: 600; }
+.lang-modal-link .material-symbols { font-size: 18px; display: none; }
+.lang-modal-link.active .material-symbols { display: block; color: var(--on-surface); }
+
+.expanded-list { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; }
+.expanded-list li { background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.95rem; font-weight: 500; }
+
+/* ============================================================
+   MOBILE (<= 850px) — 2-Row Contact Layout Lock
+   ============================================================ */
+@media (max-width: 850px) {
+    body { background: var(--surface); }
+    .sidebar { 
+        background-color: var(--surface-dim); 
+        position: static; 
+        height: auto; 
+        padding: 2.25rem 1.5rem; 
+        border-bottom: 1px solid var(--outline-var); 
+        justify-content: flex-start; 
+        align-items: center; 
+        text-align: center; 
+        gap: 1.25rem;
+        
+        /* Overrides the sideways slide with the waterfall animation for mobile */
+        animation: cascade-down 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; 
+    }
+    .layout-container { display: flex; flex-direction: column; }
+    .profile-section { flex-direction: row; justify-content: center; text-align: left; }
+    .profile-mask-wrapper { width: 130px; height: 130px; }
+    .name { font-size: 2.2rem; max-width: none; }
+    .summary-contact, .summary { width: 100%; text-align: left; }
+
+/* Absolute Grid Placement for Mobile (Strictly 2 Rows) */
+    .contact-info {
+        display: grid;
+        /* Col 1 gets 2fr so the Phone row outgrows the LinkedIn row */
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) 42px 42px; 
+        grid-template-rows: 42px 42px; /* Uniform height lock */
+    }
+
+/* Row 1 */
+    .email-btn { grid-area: 1 / 1 / 2 / 3; } 
+    .theme-btn { grid-area: 1 / 3 / 2 / 4; border-radius: 14px; } 
+    .lang-mobile-btn { grid-area: 1 / 4 / 2 / 5; display: flex !important; border-radius: 14px; } 
+    .lang-desktop-btn { display: none !important; }
+
+    /* Row 2 */
+    .phone-btn { grid-area: 2 / 1 / 3 / 2; } /* Col 1 */
+    .linkedin-btn { grid-area: 2 / 2 / 3 / 4; } /* Col 2 & 3 */
+    .resume-btn { grid-area: 2 / 4 / 3 / 5; padding: 0; border-radius: 14px; } /* Col 4 (Squircle) */
+    .resume-text { display: none; } /* Hide text to form an icon square */
+
+    .contact-btn, .segmented-control { height: 42px; }
+    .main-content { padding: 2rem 1.25rem; }
+}
+
+/* ============================================================
+   PRINT MODE (Ctrl/Cmd + P) — Purged & Clean Layout
+   ============================================================ */
+@media print {
+    :root { --surface: white; --on-surface: black; --on-surface-var: #444; --outline: black; --accent: black; }
+    body { background: none !important; color: black !important; font-size: 11pt; }
+    .layout-container { display: block; }
+    .sidebar { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 0 0 1.5rem 0; margin-bottom: 1rem; border-bottom: 2px solid black; height: auto; position: static; animation: none; background: transparent !important; }
+    
+    .profile-section { flex-direction: row; align-items: center; gap: 1.2rem; }
+    .profile-mask-wrapper { width: 70px; height: 70px; }
+    .name { font-size: 18pt; text-align: left; max-width: none; }
+    .summary { display: none !important; }
+
+    .summary-contact { flex-direction: row; width: auto; }
+
+    /* Override grid with a flat stack for text wrapping safety */
+    .contact-info { display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; }
+
+    .contact-btn, .contact-btn span:last-child { overflow: visible !important; text-overflow: clip !important; white-space: nowrap !important; min-width: max-content !important; }
+    .contact-btn { padding: 0 !important; height: auto !important; background: transparent !important; border: none !important; font-size: 9.5pt; color: black !important; }
+
+    /* Explicitly erase interactive toggles and segmented pickers from print */
+    .lang-desktop-btn, .lang-mobile-btn, .theme-btn, .resume-btn, button, .badge-outlined { display: none !important; }
+
+    .main-content { padding: 0; animation: none; background: transparent !important; }
+    .resume-section { margin-bottom: 1rem; page-break-inside: auto; animation: none; }
+    .section-title { font-size: 13pt; margin-bottom: 0.75rem; padding-top: 0; margin-top: 0; position: static; }
+    .section-title::after { display: none; }
+    .resume-entry { margin-bottom: 0.75rem; page-break-inside: avoid; }
+    .entry-header { margin-bottom: 0.2rem; }
+    .entry-logo-wrap { width: 45px; height: 35px; }
+    .entry-logo { width: 35px; height: 35px; filter: none !important; }
+    .title-primary { font-size: 11pt; color: black; }
+    .title-secondary { font-size: 11pt; color: #444; } 
+    .entry-description { background: transparent !important; padding: 0; margin-top: 0.2rem; border: none; }
+    .entry-description ul { padding-left: 1.25rem; font-size: 9.5pt; }
+    .entry-description li { margin-bottom: 0.1rem; }
+    .badges-row { gap: 0.3rem; margin-bottom: 0.3rem; }
+    .badge { font-size: 8.5pt; padding: 0.1rem 0.4rem; border: 1px solid #999 !important; background: transparent !important; color: black !important; }
+    .skills-stack { gap: 0.5rem; }
+    .skill-group { padding: 0.5rem; border: 1px solid #ccc !important; background: transparent !important; page-break-inside: avoid; }
+    .skill-group-label { font-size: 8pt; margin-bottom: 0.25rem; color: black; }
+    .material-symbols { color: black !important; }
+}
