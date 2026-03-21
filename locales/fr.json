@@ -20,17 +20,16 @@
   "btn_relevant_skills": "Compétences",
 
   "sec_education": "FORMATION",
-  
+
+  "edu_gpa": "Moyenne :",
   "edu_1_title": "Université Galatasaray",
   "edu_1_sub": "Génie Industriel",
-  "edu_1_gpa": "Moyenne : 3.65",
   "edu_1_badge1": "4e année",
   "edu_1_date": "2021 – Présent",
   "edu_1_loc": "Istanbul, Turquie",
 
   "edu_2_title": "Université Galatasaray",
   "edu_2_sub": "Génie Informatique",
-  "edu_2_gpa": "Moyenne : 3.45",
   "edu_2_badge1": "3e année",
   "edu_2_badge2": "Double Diplôme",
   "edu_2_date": "2023 – Présent",
@@ -38,7 +37,6 @@
 
   "edu_3_title": "SIGMA Clermont",
   "edu_3_sub": "Systèmes de Production et Logistique",
-  "edu_3_gpa": "Moyenne : 3.52",
   "edu_3_badge1": "Échange Erasmus",
   "edu_3_date": "Sept. 2025 – Déc. 2025",
   "edu_3_loc": "Clermont-Ferrand, France",
@@ -83,7 +81,8 @@
 
   "ldr_2_title": "Club d'IA et de Science des Données de l'Univ. Galatasaray",
   "ldr_2_sub": "Co-fondateur",
-  "ldr_2_date": "Mars 2024 – Présent",
+  "ldr_2_date": "Mars 2024",
+  "ldr_2_loc": "Istanbul, Turquie",
   "ldr_2_desc_1": "Co-fondation de la première communauté étudiante dédiée à l'IA au sein de l'université avec 11 autres membres.",
 
   "sec_projects": "PROJETS",

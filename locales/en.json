@@ -20,17 +20,16 @@
   "btn_relevant_skills": "Relevant Skills",
 
   "sec_education": "EDUCATION",
-  
+
+  "edu_gpa": "GPA:",
   "edu_1_title": "Galatasaray University",
   "edu_1_sub": "Industrial Engineering",
-  "edu_1_gpa": "GPA: 3.65",
   "edu_1_badge1": "4th year",
   "edu_1_date": "2021 – Present",
   "edu_1_loc": "Istanbul, Turkey",
 
   "edu_2_title": "Galatasaray University",
   "edu_2_sub": "Computer Engineering",
-  "edu_2_gpa": "GPA: 3.45",
   "edu_2_badge1": "3rd year",
   "edu_2_badge2": "Double Major",
   "edu_2_date": "2023 – Present",
@@ -38,7 +37,6 @@
 
   "edu_3_title": "SIGMA Clermont",
   "edu_3_sub": "Production and Logistics Systems",
-  "edu_3_gpa": "GPA: 3.52",
   "edu_3_badge1": "Erasmus Exchange",
   "edu_3_date": "Sep. 2025 – Dec. 2025",
   "edu_3_loc": "Clermont-Ferrand, France",
@@ -83,7 +81,8 @@
 
   "ldr_2_title": "Galatasaray University AI and Data Science Applications Club",
   "ldr_2_sub": "Co-Founder",
-  "ldr_2_date": "Mar. 2024 – Present",
+  "ldr_2_date": "Mar. 2024",
+  "ldr_2_loc": "Istanbul, Turkey",
   "ldr_2_desc_1": "Co-founded the first AI student community at the university alongside 11 other members.",
 
   "sec_projects": "PROJECTS",
