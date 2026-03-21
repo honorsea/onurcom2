@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ lang_code }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onur Deniz Özdemir</title>
+    <title>{{ meta_title }}</title>
     
     <link rel="preload" as="image" href="src/ben3.jpeg">
 
@@ -32,13 +32,13 @@
         <aside class="sidebar">
             <div class="profile-section">
                 <div class="profile-mask-wrapper">
-                    <img src="src/ben3.jpeg" alt="Onur Deniz Özdemir" class="profile-img">
+                    <img src="src/ben3.jpeg" alt="{{ meta_title }}" class="profile-img">
                 </div>
-                <h1 class="name">Onur Deniz Özdemir</h1>
+                <h1 class="name">{{ meta_title }}</h1>
             </div>
 
             <div class="summary-contact">
-                <p class="summary">Étudiant motivé en double diplôme en génie informatique (3e année) et en génie industriel (4e année), possédant une expérience en science des données, et manifestant un vif intérêt pour l'architecture informatique et l'électronique.</p>
+                <p class="summary">{{ summary_text }}</p>
                 
                 <div class="contact-info">
                     
@@ -60,9 +60,9 @@
                         <span>+90 553 543 18 24</span>
                     </a>
                     
-                    <a href="src/resume.pdf" target="_blank" rel="noopener" class="contact-btn pill-shape primary-accent-btn resume-btn">
+                    <a href="{{ resume_link }}" target="_blank" rel="noopener" class="contact-btn pill-shape primary-accent-btn resume-btn">
                         <span class="material-symbols" aria-hidden="true">description</span>
-                        <span class="resume-text">CV</span>
+                        <span class="resume-text">{{ btn_resume }}</span>
                     </a>
 
                     <a href="https://linkedin.com/in/onur-deniz-ozdemir" target="_blank" rel="noopener" class="contact-btn pill-shape linkedin-btn">
@@ -71,15 +71,15 @@
                     </a>
 
                     <div class="segmented-control lang-desktop-btn" id="lang-control">
-                        <a href="index.html" class="segment " aria-selected="false">
+                        <a href="index.html" class="segment {{ nav_en }}" aria-selected="{{ aria_en }}">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>EN</span>
                         </a>
-                        <a href="index_fr.html" class="segment selected" aria-selected="true">
+                        <a href="index_fr.html" class="segment {{ nav_fr }}" aria-selected="{{ aria_fr }}">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>FR</span>
                         </a>
-                        <a href="index_tr.html" class="segment " aria-selected="false">
+                        <a href="index_tr.html" class="segment {{ nav_tr }}" aria-selected="{{ aria_tr }}">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>TR</span>
                         </a>
@@ -91,22 +91,22 @@
         <main class="main-content">
 
             <section class="resume-section" id="education">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">school</span> FORMATION</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">school</span> {{ sec_education }}</h2>
 
                 <article class="resume-entry">
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Université Galatasaray</h3>
-                            <h3 class="title-secondary">Génie Industriel</h3>
+                            <h3 class="title-primary">{{ edu_1_title }}</h3>
+                            <h3 class="title-secondary">{{ edu_1_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/ie.pdf" target="_blank" rel="noopener" class="badge badge-link">Moyenne : 3.65</a>
-                        <span class="badge">4e année</span>
-                        <span class="badge">2021 – Présent</span>
-                        <span class="badge">Istanbul, Turquie</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-ie-courses')">Cours</button>
+                        <a href="src/ie.pdf" target="_blank" rel="noopener" class="badge badge-link">{{ edu_1_gpa }}</a>
+                        <span class="badge">{{ edu_1_badge1 }}</span>
+                        <span class="badge">{{ edu_1_date }}</span>
+                        <span class="badge">{{ edu_1_loc }}</span>
+                        <button class="badge badge-outlined" onclick="openModal('modal-ie-courses')">{{ btn_coursework }}</button>
                     </div>
                 </article>
 
@@ -114,17 +114,17 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Université Galatasaray</h3>
-                            <h3 class="title-secondary">Génie Informatique</h3>
+                            <h3 class="title-primary">{{ edu_2_title }}</h3>
+                            <h3 class="title-secondary">{{ edu_2_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/ce.pdf" target="_blank" rel="noopener" class="badge badge-link">Moyenne : 3.45</a>
-                        <span class="badge">3e année</span>
-                        <span class="badge">Double Diplôme</span>
-                        <span class="badge">2023 – Présent</span>
-                        <span class="badge">Istanbul, Turquie</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-ce-courses')">Cours</button>
+                        <a href="src/ce.pdf" target="_blank" rel="noopener" class="badge badge-link">{{ edu_2_gpa }}</a>
+                        <span class="badge">{{ edu_2_badge1 }}</span>
+                        <span class="badge">{{ edu_2_badge2 }}</span>
+                        <span class="badge">{{ edu_2_date }}</span>
+                        <span class="badge">{{ edu_2_loc }}</span>
+                        <button class="badge badge-outlined" onclick="openModal('modal-ce-courses')">{{ btn_coursework }}</button>
                     </div>
                 </article>
 
@@ -132,16 +132,16 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/sigma.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">SIGMA Clermont</h3>
-                            <h3 class="title-secondary">Systèmes de Production et Logistique</h3>
+                            <h3 class="title-primary">{{ edu_3_title }}</h3>
+                            <h3 class="title-secondary">{{ edu_3_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/sigma.pdf" target="_blank" rel="noopener" class="badge badge-link">Moyenne : 3.52</a>
-                        <span class="badge">Échange Erasmus</span>
-                        <span class="badge">Sept. 2025 – Déc. 2025</span>
-                        <span class="badge">Clermont-Ferrand, France</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-sigma-courses')">Cours</button>
+                        <a href="src/sigma.pdf" target="_blank" rel="noopener" class="badge badge-link">{{ edu_3_gpa }}</a>
+                        <span class="badge">{{ edu_3_badge1 }}</span>
+                        <span class="badge">{{ edu_3_date }}</span>
+                        <span class="badge">{{ edu_3_loc }}</span>
+                        <button class="badge badge-outlined" onclick="openModal('modal-sigma-courses')">{{ btn_coursework }}</button>
                     </div>
                 </article>
 
@@ -149,38 +149,38 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/bel.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Bursa Erkek Lisesi</h3>
-                            <h3 class="title-secondary">Lycée</h3>
+                            <h3 class="title-primary">{{ edu_4_title }}</h3>
+                            <h3 class="title-secondary">{{ edu_4_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Classé 292e à l'examen national d'entrée à l'enseignement supérieur (YKS).</span>
-                        <span class="badge">Diplômé en 2021</span>
-                        <span class="badge">Bursa, Turquie</span>
+                        <span class="badge">{{ edu_4_badge1 }}</span>
+                        <span class="badge">{{ edu_4_date }}</span>
+                        <span class="badge">{{ edu_4_loc }}</span>
                     </div>
                 </article>
             </section>
 
             <section class="resume-section" id="experience">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">work</span> EXPÉRIENCE</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">work</span> {{ sec_experience }}</h2>
 
                 <article class="resume-entry">
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/renault.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Groupe Renault</h3>
-                            <h3 class="title-secondary">Stagiaire en Ingénierie Après-Vente</h3>
+                            <h3 class="title-primary">{{ exp_1_title }}</h3>
+                            <h3 class="title-secondary">{{ exp_1_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Juil. 2025 – Août 2025</span>
-                        <span class="badge">Bursa, Turquie</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-renault-stack')">Compétences</button>
+                        <span class="badge">{{ exp_1_date }}</span>
+                        <span class="badge">{{ exp_1_loc }}</span>
+                        <button class="badge badge-outlined" onclick="openModal('modal-renault-stack')">{{ btn_relevant_skills }}</button>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Mise en œuvre d'un projet de numérisation basé sur la RPA utilisant Python, Power Automate et Power BI pour l'analyse des données de production.</li>
-                            <li>Atteinte d'une <strong>amélioration de 98 %</strong> du temps de cycle moyen des processus (de 9:33 min à 8 secondes) avec un taux d'erreur de saisie de 0 %.</li>
+                            <li>{{ exp_1_desc_1 }}</li>
+                            <li>{{ exp_1_desc_2 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -189,19 +189,19 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/googleai.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Google AI and Technology Academy</h3>
-                            <h3 class="title-secondary">Participant au programme</h3>
+                            <h3 class="title-primary">{{ exp_2_title }}</h3>
+                            <h3 class="title-secondary">{{ exp_2_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Nov. 2024 – Juin 2025</span>
-                        <span class="badge">À distance</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-google-focus')">Compétences</button>
+                        <span class="badge">{{ exp_2_date }}</span>
+                        <span class="badge">{{ exp_2_loc }}</span>
+                        <button class="badge badge-outlined" onclick="openModal('modal-google-focus')">{{ btn_relevant_skills }}</button>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Formation intensive de plusieurs mois en IA, Science des Données, Machine Learning et Gestion de Projet ; développement de projets concrets dans chaque domaine.</li>
-                            <li>Sélectionné parmi <strong>2 000 participants</strong> sur plus de 25 000 candidatures.</li>
+                            <li>{{ exp_2_desc_1 }}</li>
+                            <li>{{ exp_2_desc_2 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -210,43 +210,43 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/yazaki.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Yazaki</h3>
-                            <h3 class="title-secondary">Stagiaire en Génie Industriel et Production</h3>
+                            <h3 class="title-primary">{{ exp_3_title }}</h3>
+                            <h3 class="title-secondary">{{ exp_3_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Juil. 2024</span>
-                        <span class="badge">Bursa, Turquie</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-yazaki-skills')">Compétences</button>
+                        <span class="badge">{{ exp_3_date }}</span>
+                        <span class="badge">{{ exp_3_loc }}</span>
+                        <button class="badge badge-outlined" onclick="openModal('modal-yazaki-skills')">{{ btn_relevant_skills }}</button>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Réalisation d'une étude de temps et mouvements en mode agile pour optimiser l'efficacité de la ligne de production.</li>
-                            <li>Expérience en rotation dans les départements Planification de Projet, Gestion de Production, Logistique et Supply Chain.</li>
+                            <li>{{ exp_3_desc_1 }}</li>
+                            <li>{{ exp_3_desc_2 }}</li>
                         </ul>
                     </div>
                 </article>
             </section>
 
             <section class="resume-section" id="leadership">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">podium</span> LEADERSHIP</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">podium</span> {{ sec_leadership }}</h2>
 
                 <article class="resume-entry">
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/ieee.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">IEEE Université Galatasaray</h3>
-                            <h3 class="title-secondary">Président</h3>
+                            <h3 class="title-primary">{{ ldr_1_title }}</h3>
+                            <h3 class="title-secondary">{{ ldr_1_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Juin 2023 – Juin 2025</span>
-                        <span class="badge">Istanbul, Turquie</span>
+                        <span class="badge">{{ ldr_1_date }}</span>
+                        <span class="badge">{{ ldr_1_loc }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Direction d'une branche étudiante de <strong>plus de 300 membres</strong>, assurant une participation active et une croissance continue.</li>
-                            <li>Gestion des relations et de la communication avec diverses entreprises pour des événements et des partenariats à long terme.</li>
+                            <li>{{ ldr_1_desc_1 }}</li>
+                            <li>{{ ldr_1_desc_2 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -255,40 +255,40 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsuiad.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Club d'IA et de Science des Données de l'Univ. Galatasaray</h3>
-                            <h3 class="title-secondary">Co-fondateur</h3>
+                            <h3 class="title-primary">{{ ldr_2_title }}</h3>
+                            <h3 class="title-secondary">{{ ldr_2_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Mars 2024 – Présent</span>
+                        <span class="badge">{{ ldr_2_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Co-fondation de la première communauté étudiante dédiée à l'IA au sein de l'université avec 11 autres membres.</li>
+                            <li>{{ ldr_2_desc_1 }}</li>
                         </ul>
                     </div>
                 </article>
             </section>
 
             <section class="resume-section" id="projects">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">folder</span> PROJETS</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">folder</span> {{ sec_projects }}</h2>
 
                 <article class="resume-entry">
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Conception de systèmes de fabrication intelligente Industrie 5.0 intégrés à l'IA</h3>
-                            <h3 class="title-secondary">Université Galatasaray</h3>
+                            <h3 class="title-primary">{{ prj_1_title }}</h3>
+                            <h3 class="title-secondary">{{ prj_1_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Thèse de fin d'études</span>
-                        <span class="badge">Fév. 2026 – Présent</span>
+                        <span class="badge">{{ prj_1_badge1 }}</span>
+                        <span class="badge">{{ prj_1_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Développement d'un système de production intelligent Industrie 5.0 intégré à des systèmes d'IA multi-agents pour un raisonnement autonome en temps réel sur les lignes de production.</li>
-                            <li>Utilisation du deep learning, de la robotique collaborative, des LLM avec RAG (Retrieval-Augmented Generation) et des jumeaux numériques.</li>
+                            <li>{{ prj_1_desc_1 }}</li>
+                            <li>{{ prj_1_desc_2 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -297,19 +297,19 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/michelin.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Projet 2A : Planification d'une installation de légumerie</h3>
-                            <h3 class="title-secondary">Michelin & SIGMA Clermont</h3>
+                            <h3 class="title-primary">{{ prj_2_title }}</h3>
+                            <h3 class="title-secondary">{{ prj_2_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Erasmus</span>
-                        <span class="badge">Sept. 2025 – Déc. 2025</span>
+                        <span class="badge">{{ prj_2_badge1 }}</span>
+                        <span class="badge">{{ prj_2_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Collaboration avec Michelin pour planifier une installation de transformation de légumes en utilisant la science des données pour analyser la demande régionale et la saisonnalité.</li>
-                            <li>Application de l'ingénierie système pour définir le périmètre, les scénarios d'utilisation et la conception de l'implantation (layout) sous contraintes réelles.</li>
-                            <li>Projet académique réalisé en équipe lors de mon échange Erasmus à SIGMA Clermont.</li>
+                            <li>{{ prj_2_desc_1 }}</li>
+                            <li>{{ prj_2_desc_2 }}</li>
+                            <li>{{ prj_2_desc_3 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -318,17 +318,17 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Projet Pintos</h3>
-                            <h3 class="title-secondary">INF333 Systèmes d'Exploitation</h3>
+                            <h3 class="title-primary">{{ prj_3_title }}</h3>
+                            <h3 class="title-secondary">{{ prj_3_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Académique</span>
-                        <span class="badge">Fév. 2025 – Juin 2025</span>
+                        <span class="badge">{{ prj_3_badge1 }}</span>
+                        <span class="badge">{{ prj_3_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Programmation d'un noyau de système d'exploitation x86 fonctionnel (Pintos) en C, incluant le multithreading, l'ordonnancement par priorité et la gestion de la mémoire virtuelle.</li>
+                            <li>{{ prj_3_desc_1 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -337,17 +337,17 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Projet Istanbul Smart City</h3>
-                            <h3 class="title-secondary">INF438 Bases de Données Avancées</h3>
+                            <h3 class="title-primary">{{ prj_4_title }}</h3>
+                            <h3 class="title-secondary">{{ prj_4_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Académique</span>
-                        <span class="badge">Janv. 2025</span>
+                        <span class="badge">{{ prj_4_badge1 }}</span>
+                        <span class="badge">{{ prj_4_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Conception d'un pipeline ETL pour traiter des données temporelles multimodales du portail Open Data d'Istanbul (IBB) via SQL, BigQuery et Looker Studio.</li>
+                            <li>{{ prj_4_desc_1 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -356,17 +356,17 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Analyse Coûts-Bénéfices Cisco</h3>
-                            <h3 class="title-secondary">IND433 ERP (Enterprise Resource Planning)</h3>
+                            <h3 class="title-primary">{{ prj_5_title }}</h3>
+                            <h3 class="title-secondary">{{ prj_5_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Académique</span>
-                        <span class="badge">Fév. 2026</span>
+                        <span class="badge">{{ prj_5_badge1 }}</span>
+                        <span class="badge">{{ prj_5_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Évaluation complète de la refonte de l'ERP de Cisco : calcul du WACC/CAPM, phasage de l'investissement (courbe en S) et analyse de sensibilité pour une recommandation de ROI.</li>
+                            <li>{{ prj_5_desc_1 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -375,39 +375,39 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/tubitak.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Élève Chercheur</h3>
-                            <h3 class="title-secondary">TÜBİTAK</h3>
+                            <h3 class="title-primary">{{ prj_6_title }}</h3>
+                            <h3 class="title-secondary">{{ prj_6_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet de Recherche</span>
-                        <span class="badge">2019 & 2020</span>
+                        <span class="badge">{{ prj_6_badge1 }}</span>
+                        <span class="badge">{{ prj_6_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Développement de deux projets de recherche (programme 2204-A) : adaptation de la technologie Maglev aux vélos et souris d'ordinateur auto-alimentées par énergie cinétique.</li>
+                            <li>{{ prj_6_desc_1 }}</li>
                         </ul>
                     </div>
                 </article>
             </section>
 
             <section class="resume-section" id="competitions">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">emoji_events</span> COMPÉTITIONS</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">emoji_events</span> {{ sec_competitions }}</h2>
 
                 <article class="resume-entry">
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/ntt.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Concours de cas NTT DATA</h3>
-                            <h3 class="title-secondary">Finaliste</h3>
+                            <h3 class="title-primary">{{ comp_1_title }}</h3>
+                            <h3 class="title-secondary">{{ comp_1_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Déc. 2024</span>
+                        <span class="badge">{{ comp_1_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Élaboration en 3 heures d'une solution durable basée sur les données avec gestion proactive des risques pour un problème d'allocation de ressources.</li>
+                            <li>{{ comp_1_desc_1 }}</li>
                         </ul>
                     </div>
                 </article>
@@ -416,36 +416,36 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/first.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">FIRST Lego League</h3>
-                            <h3 class="title-secondary">Membre de l'équipe "Monster Lego"</h3>
+                            <h3 class="title-primary">{{ comp_2_title }}</h3>
+                            <h3 class="title-secondary">{{ comp_2_sub }}</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">2014 – 2015</span>
+                        <span class="badge">{{ comp_2_date }}</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Construction d'un robot autonome doté de capteurs (Lego Mindstorms) pour franchir des parcours d'obstacles complexes.</li>
+                            <li>{{ comp_2_desc_1 }}</li>
                         </ul>
                     </div>
                 </article>
             </section>
 
             <section class="resume-section" id="skills">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">code</span> COMPÉTENCES</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">code</span> {{ sec_skills }}</h2>
 
                 <div class="skills-stack">
                     <div class="skill-group">
-                        <span class="skill-group-label">Langues</span>
+                        <span class="skill-group-label">{{ skill_group_1 }}</span>
                         <div class="badges-row">
-                            <span class="badge lang-badge">Anglais <span class="lang-level">C1</span></span>
-                            <span class="badge lang-badge">Français <span class="lang-level">B2</span></span>
-                            <span class="badge lang-badge">Allemand <span class="lang-level">A1</span></span>
-                            <span class="badge lang-badge">Turc <span class="lang-level">Langue maternelle</span></span>
+                            <span class="badge lang-badge">{{ lang_en }} <span class="lang-level">{{ lang_en_lvl }}</span></span>
+                            <span class="badge lang-badge">{{ lang_fr }} <span class="lang-level">{{ lang_fr_lvl }}</span></span>
+                            <span class="badge lang-badge">{{ lang_de }} <span class="lang-level">{{ lang_de_lvl }}</span></span>
+                            <span class="badge lang-badge">{{ lang_tr }} <span class="lang-level">{{ lang_tr_lvl }}</span></span>
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Programmation</span>
+                        <span class="skill-group-label">{{ skill_group_2 }}</span>
                         <div class="badges-row">
                             <span onclick="openModal('modal-python')" class="badge badge-link">Python</span>
                             <span class="badge">C</span>
@@ -456,7 +456,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Data & Cloud</span>
+                        <span class="skill-group-label">{{ skill_group_3 }}</span>
                         <div class="badges-row">
                             <span class="badge">Power BI</span>
                             <span class="badge">Power Automate</span>
@@ -475,7 +475,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Outils</span>
+                        <span class="skill-group-label">{{ skill_group_4 }}</span>
                         <div class="badges-row">
                             <span class="badge badge-link" onclick="openModal('modal-microsoft-office')">Microsoft Office</span>
                             <span class="badge">Git</span>
@@ -493,30 +493,30 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Compétences Douces</span>
+                        <span class="skill-group-label">{{ skill_group_5 }}</span>
                         <div class="badges-row">
-                            <span class="badge">Leadership</span>
-                            <span class="badge">Travail d'équipe</span>
-                            <span class="badge">Adaptabilité</span>
-                            <span class="badge">Gestion de Projet</span>
-                            <span class="badge">Esprit Analytique</span>
-                            <span class="badge">Gestion du Temps</span>
+                            <span class="badge">{{ soft_1 }}</span>
+                            <span class="badge">{{ soft_2 }}</span>
+                            <span class="badge">{{ soft_3 }}</span>
+                            <span class="badge">{{ soft_4 }}</span>
+                            <span class="badge">{{ soft_5 }}</span>
+                            <span class="badge">{{ soft_6 }}</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="resume-section" id="certifications">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span> CERTIFICATIONS</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span> {{ sec_certs }}</h2>
 
                 <div class="badges-row">
-                    <a href="https://www.credly.com/badges/8716045e-23d8-497f-bb69-9d23a66766db" target="_blank" rel="noopener" class="badge badge-link">Cisco : Bases des réseaux informatiques</a>
-                    <a href="https://www.credly.com/badges/3812a599-1ee6-4bf7-bcb5-0be16793d286" target="_blank" rel="noopener" class="badge badge-link">Cisco : Introduction à la Science des Données</a>
-                    <a href="https://akbank-genclik-akademisi.verified.cv/en/verify/96385539758716" target="_blank" rel="noopener" class="badge badge-link">Akbank : Cybersécurité 101</a>
-                    <a href="https://learning.miuul.com/certificates/6szrdopwkw" target="_blank" rel="noopener" class="badge badge-link">Miuul : Python pour la Science des Données</a>
-                    <a href="https://learning.miuul.com/certificates/idps32sisg" target="_blank" rel="noopener" class="badge badge-link">Miuul : Machine Learning</a>
-                    <a href="https://learning.miuul.com/certificates/ktbcw9q4t6" target="_blank" rel="noopener" class="badge badge-link">Miuul : Feature Engineering</a>
-                    <a href="src/delf.pdf" target="_blank" rel="noopener" class="badge badge-link">Diplôme DELF B2</a>
+                    <a href="https://www.credly.com/badges/8716045e-23d8-497f-bb69-9d23a66766db" target="_blank" rel="noopener" class="badge badge-link">{{ cert_1 }}</a>
+                    <a href="https://www.credly.com/badges/3812a599-1ee6-4bf7-bcb5-0be16793d286" target="_blank" rel="noopener" class="badge badge-link">{{ cert_2 }}</a>
+                    <a href="https://akbank-genclik-akademisi.verified.cv/en/verify/96385539758716" target="_blank" rel="noopener" class="badge badge-link">{{ cert_3 }}</a>
+                    <a href="https://learning.miuul.com/certificates/6szrdopwkw" target="_blank" rel="noopener" class="badge badge-link">{{ cert_4 }}</a>
+                    <a href="https://learning.miuul.com/certificates/idps32sisg" target="_blank" rel="noopener" class="badge badge-link">{{ cert_5 }}</a>
+                    <a href="https://learning.miuul.com/certificates/ktbcw9q4t6" target="_blank" rel="noopener" class="badge badge-link">{{ cert_6 }}</a>
+                    <a href="src/delf.pdf" target="_blank" rel="noopener" class="badge badge-link">{{ cert_7 }}</a>
                 </div>
             </section>
 
@@ -526,85 +526,85 @@
 
     <dialog id="modal-lang" class="custom-modal">
         <div class="modal-header">
-            <h3>Choisir la langue</h3>
+            <h3>{{ modal_lang_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <div class="modal-lang-links">
-            <a href="index.html" class="lang-modal-link "><span class="material-symbols">check</span> English (EN)</a>
-            <a href="index_fr.html" class="lang-modal-link active"> Français (FR)</a>
-            <a href="index_tr.html" class="lang-modal-link "> Türkçe (TR)</a>
+            <a href="index.html" class="lang-modal-link {{ nav_modal_en }}"><span class="material-symbols">check</span> {{ modal_lang_en }}</a>
+            <a href="index_fr.html" class="lang-modal-link {{ nav_modal_fr }}"> {{ modal_lang_fr }}</a>
+            <a href="index_tr.html" class="lang-modal-link {{ nav_modal_tr }}"> {{ modal_lang_tr }}</a>
         </div>
     </dialog>
 
     <dialog id="modal-ie-courses" class="custom-modal">
         <div class="modal-header">
-            <h3>Cours en Génie Industriel</h3>
+            <h3>{{ modal_ie_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Recherche Opérationnelle</li>
-            <li>Modélisation Mathématique</li>
-            <li>Modélisation et Simulation</li>
-            <li>Analyse de Systèmes</li>
-            <li>Gestion de Projet</li>
-            <li>Économie de l'Ingénieur</li>
-            <li>Analyse d'Investissement</li>
-            <li>Ingénierie Financière</li>
-            <li>Planification de la Production</li>
-            <li>Gestion de la Production</li>
-            <li>ERP</li>
-            <li>Aménagement d'Usine et Manutention</li>
-            <li>Gestion de la Qualité Totale (TQM)</li>
-            <li>Statistiques</li>
-            <li>Probabilités</li>
-            <li>Introduction à la Théorie des Jeux</li>
+            <li>{{ ie_course_1 }}</li>
+            <li>{{ ie_course_2 }}</li>
+            <li>{{ ie_course_3 }}</li>
+            <li>{{ ie_course_4 }}</li>
+            <li>{{ ie_course_5 }}</li>
+            <li>{{ ie_course_6 }}</li>
+            <li>{{ ie_course_7 }}</li>
+            <li>{{ ie_course_8 }}</li>
+            <li>{{ ie_course_9 }}</li>
+            <li>{{ ie_course_10 }}</li>
+            <li>{{ ie_course_11 }}</li>
+            <li>{{ ie_course_12 }}</li>
+            <li>{{ ie_course_13 }}</li>
+            <li>{{ ie_course_14 }}</li>
+            <li>{{ ie_course_15 }}</li>
+            <li>{{ ie_course_16 }}</li>
         </ul>
     </dialog>
 
     <dialog id="modal-ce-courses" class="custom-modal">
         <div class="modal-header">
-            <h3>Cours en Génie Informatique</h3>
+            <h3>{{ modal_ce_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Structures de Données et Algorithmes</li>
-            <li>Robotique</li>
-            <li>Architecture Informatique</li>
-            <li>Électronique Numérique</li>
-            <li>Signaux et Systèmes</li>
-            <li>Systèmes d'Exploitation</li>
-            <li>Bases de Données Relationnelles</li>
-            <li>Bases de Données Avancées</li>
-            <li>Gestion et Sécurité des Bases de Données</li>
-            <li>Réseaux Informatiques</li>
-            <li>Analyse Numérique</li>
-            <li>Programmation Orientée Objet</li>
+            <li>{{ ce_course_1 }}</li>
+            <li>{{ ce_course_2 }}</li>
+            <li>{{ ce_course_3 }}</li>
+            <li>{{ ce_course_4 }}</li>
+            <li>{{ ce_course_5 }}</li>
+            <li>{{ ce_course_6 }}</li>
+            <li>{{ ce_course_7 }}</li>
+            <li>{{ ce_course_8 }}</li>
+            <li>{{ ce_course_9 }}</li>
+            <li>{{ ce_course_10 }}</li>
+            <li>{{ ce_course_11 }}</li>
+            <li>{{ ce_course_12 }}</li>
         </ul>
     </dialog>
 
     <dialog id="modal-sigma-courses" class="custom-modal">
         <div class="modal-header">
-            <h3>Cours à SIGMA Clermont</h3>
+            <h3>{{ modal_sigma_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Gestion de Projet</li>
-            <li>Marketing</li>
-            <li>Robotisation et Automatisation</li>
-            <li>Usine Numérique et Réalité Virtuelle</li>
-            <li>Modélisation et analyse des systèmes de production</li>
-            <li>Industrialisation et Lancement de Production</li>
-            <li>Ingénierie et Méthodes d'Étude</li>
-            <li>Introduction à la Science des Données</li>
-            <li>Méthodes de Management</li>
-            <li>Anglais</li>
-            <li>Français Langue Étrangère (FLE)</li>
+            <li>{{ sigma_course_1 }}</li>
+            <li>{{ sigma_course_2 }}</li>
+            <li>{{ sigma_course_3 }}</li>
+            <li>{{ sigma_course_4 }}</li>
+            <li>{{ sigma_course_5 }}</li>
+            <li>{{ sigma_course_6 }}</li>
+            <li>{{ sigma_course_7 }}</li>
+            <li>{{ sigma_course_8 }}</li>
+            <li>{{ sigma_course_9 }}</li>
+            <li>{{ sigma_course_10 }}</li>
+            <li>{{ sigma_course_11 }}</li>
         </ul>
     </dialog>
 
     <dialog id="modal-renault-stack" class="custom-modal">
         <div class="modal-header">
-            <h3>Compétences : Stage Renault</h3>
+            <h3>{{ modal_renault_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
@@ -617,24 +617,24 @@
             <li>Excel VBA</li>
             <li>Power Query</li>
             <li>PowerPoint</li>
-            <li>Communication</li>
-            <li>Gestion de Projet</li>
-            <li>Robotic Process Automation (RPA)</li>
-            <li>Gestion de Production</li>
-            <li>Français</li>
+            <li>{{ ren_skill_1 }}</li>
+            <li>{{ ren_skill_2 }}</li>
+            <li>{{ ren_skill_3 }}</li>
+            <li>{{ ren_skill_4 }}</li>
+            <li>{{ ren_skill_5 }}</li>
         </ul>
     </dialog>
 
     <dialog id="modal-google-focus" class="custom-modal">
         <div class="modal-header">
-            <h3>Compétences : Google AI</h3>
+            <h3>{{ modal_google_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Intelligence Artificielle</li>
-            <li>Science des Données</li>
-            <li>Machine Learning</li>
-            <li>Gestion de Projet</li>
+            <li>{{ goog_skill_1 }}</li>
+            <li>{{ goog_skill_2 }}</li>
+            <li>{{ goog_skill_3 }}</li>
+            <li>{{ goog_skill_4 }}</li>
             <li>TensorFlow</li>
             <li>PyTorch</li>
             <li>Scikit-learn</li>
@@ -650,32 +650,32 @@
 
     <dialog id="modal-yazaki-skills" class="custom-modal">
         <div class="modal-header">
-            <h3>Compétences : Stage Yazaki</h3>
+            <h3>{{ modal_yazaki_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Optimisation de l'efficacité des lignes de production</li>
-            <li>Étude de Temps et Mouvements</li>
-            <li>Kaizen</li>
-            <li>5S</li>
-            <li>Lean Manufacturing</li>
-            <li>Graphiques Yamazumi</li>
-            <li>AMDEC (FMEA)</li>
-            <li>Planification de Projet</li>
-            <li>Logistique</li>
-            <li>Gestion de Production</li>
+            <li>{{ yaz_skill_1 }}</li>
+            <li>{{ yaz_skill_2 }}</li>
+            <li>{{ yaz_skill_3 }}</li>
+            <li>{{ yaz_skill_4 }}</li>
+            <li>{{ yaz_skill_5 }}</li>
+            <li>{{ yaz_skill_6 }}</li>
+            <li>{{ yaz_skill_7 }}</li>
+            <li>{{ yaz_skill_8 }}</li>
+            <li>{{ yaz_skill_9 }}</li>
+            <li>{{ yaz_skill_10 }}</li>
             <li>AutoCAD</li>
-            <li>Travail d'équipe</li>
-            <li>Adaptabilité</li>
-            <li>Résolution de Problèmes</li>
-            <li>Gestion de la Supply Chain</li>
+            <li>{{ yaz_skill_11 }}</li>
+            <li>{{ yaz_skill_12 }}</li>
+            <li>{{ yaz_skill_13 }}</li>
+            <li>{{ yaz_skill_14 }}</li>
             <li>SAP ERP</li>
         </ul>
     </dialog>
 
     <dialog id="modal-microsoft-office" class="custom-modal">
         <div class="modal-header">
-            <h3>Compétences Microsoft Office</h3>
+            <h3>{{ modal_ms_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
@@ -691,7 +691,7 @@
 
     <dialog id="modal-python" class="custom-modal">
         <div class="modal-header">
-            <h3>Compétences Python</h3>
+            <h3>{{ modal_py_title }}</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">

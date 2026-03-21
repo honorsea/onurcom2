@@ -5,7 +5,7 @@
     --md-sys-color-primary:      #2c3f5b;
     --md-sys-color-on-primary:   #ffffff;
     --md-sys-color-secondary:    #9caac2;
-    --accent:                    #cc5544; 
+    --accent:                    #2c3f5b;
 
     --surface:          #ffffff;   
     --surface-dim:      #f4f7f9;      
@@ -49,7 +49,7 @@
     --outline:          #5c6e8a; 
     --outline-var:      #3a5070; 
     
-    --accent:           #e86b6b; 
+    --accent:           #3a5070;
     --backdrop-bg:      rgba(255, 255, 255, 0.12); 
 }
 
@@ -87,8 +87,8 @@ a { text-decoration: none; color: inherit; }
     width: 180px; 
     height: 180px;
     flex-shrink: 0;
-    -webkit-mask-image: url(star.svg); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;
-    mask-image: url(star.svg); mask-size: contain; mask-repeat: no-repeat; mask-position: center;
+    -webkit-mask-image: url(src/star.svg); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;
+    mask-image: url(src/star.svg); mask-size: contain; mask-repeat: no-repeat; mask-position: center;
     transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1); will-change: transform; 
 }
 .profile-img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1); will-change: transform; }
@@ -101,7 +101,7 @@ a { text-decoration: none; color: inherit; }
    SUMMARY + UNIFIED CONTACT GRID
    ============================================================ */
 .summary-contact { display: flex; flex-direction: column; gap: 1.4rem; }
-.summary { font-size: 0.95rem; color: var(--on-surface); text-align: justify; line-height: 1.6; }
+.summary { font-size: 0.95rem; color: var(--on-surface); text-align: justify; }
 
 /* Desktop 12-Column Grid Lock */
 .contact-info {
@@ -253,9 +253,9 @@ a { text-decoration: none; color: inherit; }
     text-overflow: ellipsis;
     box-sizing: border-box;
 }
-button.badge, a.badge-link { cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease; }
+button.badge, a.badge-link, span.badge-link { cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease; }
 .badge-outlined { background-color: transparent; border-color: var(--outline); color: var(--on-surface-var); }
-.badge-outlined:hover, a.badge-link:hover { background-color: var(--accent); color: #ffffff; border-color: var(--accent); }
+.badge-outlined:hover, a.badge-link:hover, button.badge:hover, span.badge-link:hover { background-color: var(--accent); color: #ffffff; border-color: var(--accent); }
 .lang-level { font-size: 0.72rem; font-weight: 700; background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); padding: 0.1rem 0.45rem; border-radius: 12px; letter-spacing: 0.03em; }
 
 /* ============================================================
@@ -298,9 +298,13 @@ button.badge, a.badge-link { cursor: pointer; transition: background-color 0.2s 
 .expanded-list li { background-color: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.95rem; font-weight: 500; }
 
 /* ============================================================
-   MOBILE (<= 850px) — 2-Row Contact Layout Lock
+   MOBILE (<= 850px) — 2-Row Contact Layout Lock (85% Scale)
    ============================================================ */
 @media (max-width: 850px) {
+    /* 1. Scale down the root font size. 
+       This instantly shrinks all rem-based typography, margins, and paddings by 15%. */
+    html { font-size: 85%; }
+
     body { background: var(--surface); }
     .sidebar { 
         background-color: var(--surface-dim); 
@@ -312,38 +316,49 @@ button.badge, a.badge-link { cursor: pointer; transition: background-color 0.2s 
         align-items: center; 
         text-align: center; 
         gap: 1.25rem;
-        
-        /* Overrides the sideways slide with the waterfall animation for mobile */
         animation: cascade-down 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; 
     }
     .layout-container { display: flex; flex-direction: column; }
-    .profile-section { flex-direction: row; justify-content: center; text-align: left; }
-    .profile-mask-wrapper { width: 130px; height: 130px; }
+    .profile-section { 
+        flex-direction: column; /* Stacks the photo and name vertically */
+        justify-content: center; 
+        align-items: center;
+        text-align: center; /* Centers the wrapped text */
+        gap: 0.8rem; /* A slightly tighter gap looks better when stacked */
+    }
+    
+    /* 2. Scaled down from 130px to 110px */
+    .profile-mask-wrapper { width: 110px; height: 110px; }
     .name { font-size: 2.2rem; max-width: none; }
     .summary-contact, .summary { width: 100%; text-align: left; }
 
-/* Absolute Grid Placement for Mobile (Strictly 2 Rows) */
+    /* 3. Scaled grid rows and columns from 42px to 36px */
     .contact-info {
         display: grid;
-        /* Col 1 gets 2fr so the Phone row outgrows the LinkedIn row */
-        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) 42px 42px; 
-        grid-template-rows: 42px 42px; /* Uniform height lock */
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) 36px 36px; 
+        grid-template-rows: 36px 36px; 
     }
 
-/* Row 1 */
+    /* Row 1 */
     .email-btn { grid-area: 1 / 1 / 2 / 3; } 
-    .theme-btn { grid-area: 1 / 3 / 2 / 4; border-radius: 14px; } 
-    .lang-mobile-btn { grid-area: 1 / 4 / 2 / 5; display: flex !important; border-radius: 14px; } 
+    /* Scaled border-radius from 14px to 12px */
+    .theme-btn { grid-area: 1 / 3 / 2 / 4; border-radius: 12px; } 
+    .lang-mobile-btn { grid-area: 1 / 4 / 2 / 5; display: flex !important; border-radius: 12px; } 
     .lang-desktop-btn { display: none !important; }
 
     /* Row 2 */
-    .phone-btn { grid-area: 2 / 1 / 3 / 2; } /* Col 1 */
-    .linkedin-btn { grid-area: 2 / 2 / 3 / 4; } /* Col 2 & 3 */
-    .resume-btn { grid-area: 2 / 4 / 3 / 5; padding: 0; border-radius: 14px; } /* Col 4 (Squircle) */
-    .resume-text { display: none; } /* Hide text to form an icon square */
+    .phone-btn { grid-area: 2 / 1 / 3 / 2; } 
+    .linkedin-btn { grid-area: 2 / 2 / 3 / 4; } 
+    .resume-btn { grid-area: 2 / 4 / 3 / 5; padding: 0; border-radius: 12px; } 
+    .resume-text { display: none; } 
 
-    .contact-btn, .segmented-control { height: 42px; }
+    /* Scaled button heights to match the 36px grid */
+    .contact-btn, .segmented-control { height: 36px; }
     .main-content { padding: 2rem 1.25rem; }
+
+    /* 4. Scale down the fixed px logos to maintain proportions */
+    .entry-logo-wrap { width: 68px; height: 44px; }
+    .entry-logo { width: 44px; height: 44px; }
 }
 
 /* ============================================================

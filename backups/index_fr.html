@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onur Deniz Özdemir</title>
     
-    <link rel="preload" as="image" href="src/ben3.jpeg">
-
     <script>
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -38,7 +36,9 @@
             </div>
 
             <div class="summary-contact">
-                <p class="summary">Étudiant motivé en double diplôme en génie informatique (3e année) et en génie industriel (4e année), possédant une expérience en science des données, et manifestant un vif intérêt pour l'architecture informatique et l'électronique.</p>
+                <p class="summary">
+                    Étudiant très motivé en double majeure en Génie Informatique (3ème année) et en Génie Industriel (4ème année) avec une expérience en Data Science, et un fort intérêt pour l'architecture des ordinateurs et l'électronique.
+                </p>
                 
                 <div class="contact-info">
                     
@@ -47,11 +47,11 @@
                         <span>onurdenizozdemir@icloud.com</span>
                     </a>
                     
-                    <button id="theme-toggle" class="contact-btn squircle-shape theme-btn" aria-label="Toggle Theme">
+                    <button id="theme-toggle" class="contact-btn squircle-shape theme-btn" aria-label="Changer le thème">
                         <span class="material-symbols" id="theme-icon" aria-hidden="true">dark_mode</span>
                     </button>
 
-                    <button class="contact-btn squircle-shape lang-mobile-btn" onclick="openModal('modal-lang')" aria-label="Change Language">
+                    <button class="contact-btn squircle-shape lang-mobile-btn" onclick="openModal('modal-lang')" aria-label="Changer de langue">
                         <span class="material-symbols" aria-hidden="true">language</span>
                     </button>
 
@@ -71,7 +71,7 @@
                     </a>
 
                     <div class="segmented-control lang-desktop-btn" id="lang-control">
-                        <a href="index.html" class="segment " aria-selected="false">
+                        <a href="index.html" class="segment">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>EN</span>
                         </a>
@@ -79,7 +79,7 @@
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>FR</span>
                         </a>
-                        <a href="index_tr.html" class="segment " aria-selected="false">
+                        <a href="index_tr.html" class="segment">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>TR</span>
                         </a>
@@ -102,8 +102,8 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/ie.pdf" target="_blank" rel="noopener" class="badge badge-link">Moyenne : 3.65</a>
-                        <span class="badge">4e année</span>
+                        <span class="badge">Moyenne : 3.65</span>
+                        <span class="badge">4ème année</span>
                         <span class="badge">2021 – Présent</span>
                         <span class="badge">Istanbul, Turquie</span>
                         <button class="badge badge-outlined" onclick="openModal('modal-ie-courses')">Cours</button>
@@ -119,9 +119,9 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/ce.pdf" target="_blank" rel="noopener" class="badge badge-link">Moyenne : 3.45</a>
-                        <span class="badge">3e année</span>
-                        <span class="badge">Double Diplôme</span>
+                        <span class="badge">Moyenne : 3.45</span>
+                        <span class="badge">3ème année</span>
+                        <span class="badge">Double Cursus</span>
                         <span class="badge">2023 – Présent</span>
                         <span class="badge">Istanbul, Turquie</span>
                         <button class="badge badge-outlined" onclick="openModal('modal-ce-courses')">Cours</button>
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/sigma.pdf" target="_blank" rel="noopener" class="badge badge-link">Moyenne : 3.52</a>
+                        <span class="badge">Moyenne : 3.52</span>
                         <span class="badge">Échange Erasmus</span>
                         <span class="badge">Sept. 2025 – Déc. 2025</span>
                         <span class="badge">Clermont-Ferrand, France</span>
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Classé 292e à l'examen national d'entrée à l'enseignement supérieur (YKS).</span>
+                        <span class="badge">Classé 292ème au niveau national à l'Examen des Établissements d'Enseignement Supérieur (YKS)</span>
                         <span class="badge">Diplômé en 2021</span>
                         <span class="badge">Bursa, Turquie</span>
                     </div>
@@ -169,7 +169,7 @@
                         <div class="entry-logo-wrap"><img src="src/renault.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Groupe Renault</h3>
-                            <h3 class="title-secondary">Stagiaire en Ingénierie Après-Vente</h3>
+                            <h3 class="title-secondary">Stagiaire Ingénieur Après-Vente</h3>
                         </div>
                     </div>
                     <div class="badges-row">
@@ -179,8 +179,8 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Mise en œuvre d'un projet de numérisation basé sur la RPA utilisant Python, Power Automate et Power BI pour l'analyse des données de production.</li>
-                            <li>Atteinte d'une <strong>amélioration de 98 %</strong> du temps de cycle moyen des processus (de 9:33 min à 8 secondes) avec un taux d'erreur de saisie de 0 %.</li>
+                            <li>Mise en œuvre d'un projet de numérisation basé sur la RPA à l'aide de Python, Power Automate et Power BI pour analyser les données de production.</li>
+                            <li>Amélioration de <strong>98 %</strong> du temps de cycle moyen des processus (de 9 min 33 s à 8 secondes) avec un taux d'erreur de saisie des données de 0 %.</li>
                         </ul>
                     </div>
                 </article>
@@ -190,7 +190,7 @@
                         <div class="entry-logo-wrap"><img src="src/googleai.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Google AI and Technology Academy</h3>
-                            <h3 class="title-secondary">Participant au programme</h3>
+                            <h3 class="title-secondary">Participant</h3>
                         </div>
                     </div>
                     <div class="badges-row">
@@ -200,8 +200,8 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Formation intensive de plusieurs mois en IA, Science des Données, Machine Learning et Gestion de Projet ; développement de projets concrets dans chaque domaine.</li>
-                            <li>Sélectionné parmi <strong>2 000 participants</strong> sur plus de 25 000 candidatures.</li>
+                            <li>A suivi des mois de formation en IA, Science des Données, Apprentissage Automatique et Gestion de Projet ; a développé des projets concrets dans chaque domaine.</li>
+                            <li>Sélectionné parmi <strong>2 000 participants</strong> sur plus de 25 000 candidats.</li>
                         </ul>
                     </div>
                 </article>
@@ -211,7 +211,7 @@
                         <div class="entry-logo-wrap"><img src="src/yazaki.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Yazaki</h3>
-                            <h3 class="title-secondary">Stagiaire en Génie Industriel et Production</h3>
+                            <h3 class="title-secondary">Stagiaire Ingénieur de Production</h3>
                         </div>
                     </div>
                     <div class="badges-row">
@@ -221,8 +221,8 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Réalisation d'une étude de temps et mouvements en mode agile pour optimiser l'efficacité de la ligne de production.</li>
-                            <li>Expérience en rotation dans les départements Planification de Projet, Gestion de Production, Logistique et Supply Chain.</li>
+                            <li>Réalisation d'une étude agile des temps et des mouvements pour optimiser l'efficacité de la chaîne de production.</li>
+                            <li>Acquisition d'une expérience par rotation dans la Planification de Projets, la Gestion de la Production, la Logistique et la Chaîne d'Approvisionnement.</li>
                         </ul>
                     </div>
                 </article>
@@ -235,7 +235,7 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/ieee.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">IEEE Université Galatasaray</h3>
+                            <h3 class="title-primary">Branche Étudiante IEEE de l'Université Galatasaray</h3>
                             <h3 class="title-secondary">Président</h3>
                         </div>
                     </div>
@@ -245,8 +245,8 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Direction d'une branche étudiante de <strong>plus de 300 membres</strong>, assurant une participation active et une croissance continue.</li>
-                            <li>Gestion des relations et de la communication avec diverses entreprises pour des événements et des partenariats à long terme.</li>
+                            <li>A dirigé une branche étudiante de <strong>plus de 300 membres</strong>, en assurant une participation active et une croissance continue.</li>
+                            <li>Gestion de la communication avec diverses entreprises pour des événements et des partenariats à long terme.</li>
                         </ul>
                     </div>
                 </article>
@@ -255,7 +255,7 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsuiad.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Club d'IA et de Science des Données de l'Univ. Galatasaray</h3>
+                            <h3 class="title-primary">Club des Applications de l'IA et de la Science des Données</h3>
                             <h3 class="title-secondary">Co-fondateur</h3>
                         </div>
                     </div>
@@ -264,7 +264,7 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Co-fondation de la première communauté étudiante dédiée à l'IA au sein de l'université avec 11 autres membres.</li>
+                            <li>A co-fondé la première communauté étudiante sur l'IA de l'université aux côtés de 11 autres membres.</li>
                         </ul>
                     </div>
                 </article>
@@ -277,18 +277,21 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Conception de systèmes de fabrication intelligente Industrie 5.0 intégrés à l'IA</h3>
+                            <h3 class="title-primary">Projet de Fin d'Études en Génie Industriel</h3>
                             <h3 class="title-secondary">Université Galatasaray</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Thèse de fin d'études</span>
                         <span class="badge">Fév. 2026 – Présent</span>
+                        <span class="badge">Istanbul, Turquie</span>
+                        <span class="badge">Industrie 5.0</span>
+                        <span class="badge">Apprentissage Profond</span>
+                        <span class="badge">LLM (RAG)</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Développement d'un système de production intelligent Industrie 5.0 intégré à des systèmes d'IA multi-agents pour un raisonnement autonome en temps réel sur les lignes de production.</li>
-                            <li>Utilisation du deep learning, de la robotique collaborative, des LLM avec RAG (Retrieval-Augmented Generation) et des jumeaux numériques.</li>
+                            <li>Développement d'un système de fabrication intelligente Industrie 5.0 intégré à des systèmes d'intelligence artificielle multi-agents pour réaliser un raisonnement autonome et en temps réel sur les chaînes de production.</li>
+                            <li>Utilisation de l'apprentissage profond, de la robotique collaborative, de grands modèles linguistiques avec génération augmentée par la recherche et de jumeaux numériques tout au long du projet.</li>
                         </ul>
                     </div>
                 </article>
@@ -297,19 +300,19 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/michelin.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Projet 2A : Planification d'une installation de légumerie</h3>
-                            <h3 class="title-secondary">Michelin & SIGMA Clermont</h3>
+                            <h3 class="title-primary">Projet 2A : Planification d'une Installation de Légumerie</h3>
+                            <h3 class="title-secondary">Michelin &amp; SIGMA Clermont</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Erasmus</span>
                         <span class="badge">Sept. 2025 – Déc. 2025</span>
+                        <span class="badge">Clermont-Ferrand, France</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Collaboration avec Michelin pour planifier une installation de transformation de légumes en utilisant la science des données pour analyser la demande régionale et la saisonnalité.</li>
-                            <li>Application de l'ingénierie système pour définir le périmètre, les scénarios d'utilisation et la conception de l'implantation (layout) sous contraintes réelles.</li>
-                            <li>Projet académique réalisé en équipe lors de mon échange Erasmus à SIGMA Clermont.</li>
+                            <li>Collaboration avec Michelin pour planifier une usine de transformation de légumes en utilisant la science des données pour analyser la demande régionale, la capacité des producteurs et la saisonnalité des légumes.</li>
+                            <li>Application de l'ingénierie des systèmes pour définir la portée du projet ainsi que les scénarios d'utilisation et concevoir l'aménagement de l'installation sous des contraintes du monde réel.</li>
+                            <li>Mené comme projet académique au sein d'une équipe lors de mon échange Erasmus à SIGMA Clermont.</li>
                         </ul>
                     </div>
                 </article>
@@ -323,12 +326,14 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Académique</span>
                         <span class="badge">Fév. 2025 – Juin 2025</span>
+                        <span class="badge">Programmation C</span>
+                        <span class="badge">Multithreading</span>
+                        <span class="badge">Mémoire Virtuelle</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Programmation d'un noyau de système d'exploitation x86 fonctionnel (Pintos) en C, incluant le multithreading, l'ordonnancement par priorité et la gestion de la mémoire virtuelle.</li>
+                            <li>Programmation en C d'un noyau de système d'exploitation x86 fonctionnel (Pintos), mettant en œuvre des composants de bas niveau, notamment le multithreading, la planification par priorité et la gestion de la mémoire virtuelle.</li>
                         </ul>
                     </div>
                 </article>
@@ -337,17 +342,19 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Projet Istanbul Smart City</h3>
+                            <h3 class="title-primary">Projet Istanbul Ville Intelligente</h3>
                             <h3 class="title-secondary">INF438 Bases de Données Avancées</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Académique</span>
                         <span class="badge">Janv. 2025</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">Google BigQuery</span>
+                        <span class="badge">Looker Studio</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Conception d'un pipeline ETL pour traiter des données temporelles multimodales du portail Open Data d'Istanbul (IBB) via SQL, BigQuery et Looker Studio.</li>
+                            <li>Conception d'un pipeline ETL pour traiter des données de séries chronologiques multimodales du portail de données ouvertes de l'IBB à l'aide de SQL, BigQuery et Looker Studio pour une prise de décision urbaine en temps réel.</li>
                         </ul>
                     </div>
                 </article>
@@ -356,17 +363,16 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Analyse Coûts-Bénéfices Cisco</h3>
-                            <h3 class="title-secondary">IND433 ERP (Enterprise Resource Planning)</h3>
+                            <h3 class="title-primary">Analyse Coûts-Avantages pour Cisco</h3>
+                            <h3 class="title-secondary">IND433 Progiciels de Gestion Intégrés (ERP)</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet Académique</span>
                         <span class="badge">Fév. 2026</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Évaluation complète de la refonte de l'ERP de Cisco : calcul du WACC/CAPM, phasage de l'investissement (courbe en S) et analyse de sensibilité pour une recommandation de ROI.</li>
+                            <li>Réalisation d'une évaluation complète de la refonte de l'ERP de Cisco : calcul du WACC/CAPM pour les rendements ajustés au risque, développement d'un échelonnement des investissements en courbe en S et réalisation d'une analyse de sensibilité pour une recommandation de retour sur investissement basée sur les données.</li>
                         </ul>
                     </div>
                 </article>
@@ -375,30 +381,30 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/tubitak.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Élève Chercheur</h3>
+                            <h3 class="title-primary">Étudiant en Projet de Recherche</h3>
                             <h3 class="title-secondary">TÜBİTAK</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Projet de Recherche</span>
-                        <span class="badge">2019 & 2020</span>
+                        <span class="badge">2019 &amp; 2020</span>
+                        <span class="badge">Bursa, Turquie</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Développement de deux projets de recherche (programme 2204-A) : adaptation de la technologie Maglev aux vélos et souris d'ordinateur auto-alimentées par énergie cinétique.</li>
+                            <li>Développement de deux projets de recherche dans le cadre du programme 2204-A : adaptation de la technologie Maglev sur les vélos (2020) et souris d'ordinateur auto-alimentées utilisant l'énergie cinétique (2019).</li>
                         </ul>
                     </div>
                 </article>
             </section>
 
             <section class="resume-section" id="competitions">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">emoji_events</span> COMPÉTITIONS</h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">emoji_events</span> CONCOURS</h2>
 
                 <article class="resume-entry">
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/ntt.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Concours de cas NTT DATA</h3>
+                            <h3 class="title-primary">Concours d'Études de Cas NTT DATA</h3>
                             <h3 class="title-secondary">Finaliste</h3>
                         </div>
                     </div>
@@ -407,7 +413,7 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Élaboration en 3 heures d'une solution durable basée sur les données avec gestion proactive des risques pour un problème d'allocation de ressources.</li>
+                            <li>Développement d'une solution durable basée sur les données avec une gestion proactive des risques pour un problème d'allocation de ressources en 3 heures.</li>
                         </ul>
                     </div>
                 </article>
@@ -417,7 +423,7 @@
                         <div class="entry-logo-wrap"><img src="src/first.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">FIRST Lego League</h3>
-                            <h3 class="title-secondary">Membre de l'équipe "Monster Lego"</h3>
+                            <h3 class="title-secondary">Membre de l'Équipe "Monster Lego"</h3>
                         </div>
                     </div>
                     <div class="badges-row">
@@ -425,7 +431,7 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Construction d'un robot autonome doté de capteurs (Lego Mindstorms) pour franchir des parcours d'obstacles complexes.</li>
+                            <li>Construction d'un robot autonome basé sur des capteurs utilisant Lego Mindstorms pour surmonter des parcours d'obstacles complexes.</li>
                         </ul>
                     </div>
                 </article>
@@ -441,13 +447,13 @@
                             <span class="badge lang-badge">Anglais <span class="lang-level">C1</span></span>
                             <span class="badge lang-badge">Français <span class="lang-level">B2</span></span>
                             <span class="badge lang-badge">Allemand <span class="lang-level">A1</span></span>
-                            <span class="badge lang-badge">Turc <span class="lang-level">Langue maternelle</span></span>
+                            <span class="badge lang-badge">Turc <span class="lang-level">Maternelle</span></span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <span class="skill-group-label">Programmation</span>
                         <div class="badges-row">
-                            <span onclick="openModal('modal-python')" class="badge badge-link">Python</span>
+                            <span class="badge">Python</span>
                             <span class="badge">C</span>
                             <span class="badge">Java</span>
                             <span class="badge">SQL</span>
@@ -456,51 +462,42 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Data & Cloud</span>
+                        <span class="skill-group-label">Données &amp; Cloud</span>
                         <div class="badges-row">
                             <span class="badge">Power BI</span>
                             <span class="badge">Power Automate</span>
                             <span class="badge">Power Apps</span>
-                            <span class="badge">NoSQL</span>
                             <span class="badge">SQL Server</span>
                             <span class="badge">SQL Server Management Studio</span>
-                            <span class="badge">MongoDB</span>
                             <span class="badge">Apache Kafka</span>
                             <span class="badge">Apache Spark</span>
                             <span class="badge">Apache Hadoop</span>
                             <span class="badge">Google Cloud</span>
-                            <span class="badge">Google BigQuery</span>
-                            <span class="badge">Google Looker Studio</span>
-                            <span class="badge">AWS</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <span class="skill-group-label">Outils</span>
                         <div class="badges-row">
-                            <span class="badge badge-link" onclick="openModal('modal-microsoft-office')">Microsoft Office</span>
                             <span class="badge">Git</span>
-                            <span class="badge">Docker</span>
+                            <span class="badge">Microsoft Office</span>
                             <span class="badge">Wireshark</span>
                             <span class="badge">AutoCAD</span>
                             <span class="badge">CATIA V5</span>
                             <span class="badge">3DEXPERIENCE</span>
                             <span class="badge">Unity</span>
-                            <span class="badge">SAP</span>
                             <span class="badge">AnyLogic</span>
                             <span class="badge">Arena Simulation Software</span>
-                            <span class="badge">SimPy</span>
-                            <span class="badge">CAMEO Systems Modeler</span>
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Compétences Douces</span>
+                        <span class="skill-group-label">Savoir-être</span>
                         <div class="badges-row">
                             <span class="badge">Leadership</span>
-                            <span class="badge">Travail d'équipe</span>
+                            <span class="badge">Travail en équipe</span>
                             <span class="badge">Adaptabilité</span>
-                            <span class="badge">Gestion de Projet</span>
-                            <span class="badge">Esprit Analytique</span>
-                            <span class="badge">Gestion du Temps</span>
+                            <span class="badge">Gestion de projet</span>
+                            <span class="badge">Esprit analytique</span>
+                            <span class="badge">Gestion du temps</span>
                         </div>
                     </div>
                 </div>
@@ -510,13 +507,13 @@
                 <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span> CERTIFICATIONS</h2>
 
                 <div class="badges-row">
-                    <a href="https://www.credly.com/badges/8716045e-23d8-497f-bb69-9d23a66766db" target="_blank" rel="noopener" class="badge badge-link">Cisco : Bases des réseaux informatiques</a>
-                    <a href="https://www.credly.com/badges/3812a599-1ee6-4bf7-bcb5-0be16793d286" target="_blank" rel="noopener" class="badge badge-link">Cisco : Introduction à la Science des Données</a>
-                    <a href="https://akbank-genclik-akademisi.verified.cv/en/verify/96385539758716" target="_blank" rel="noopener" class="badge badge-link">Akbank : Cybersécurité 101</a>
-                    <a href="https://learning.miuul.com/certificates/6szrdopwkw" target="_blank" rel="noopener" class="badge badge-link">Miuul : Python pour la Science des Données</a>
-                    <a href="https://learning.miuul.com/certificates/idps32sisg" target="_blank" rel="noopener" class="badge badge-link">Miuul : Machine Learning</a>
-                    <a href="https://learning.miuul.com/certificates/ktbcw9q4t6" target="_blank" rel="noopener" class="badge badge-link">Miuul : Feature Engineering</a>
-                    <a href="src/delf.pdf" target="_blank" rel="noopener" class="badge badge-link">Diplôme DELF B2</a>
+                    <a href="https://www.netacad.com/courses/networking/networking-basics" target="_blank" rel="noopener" class="badge badge-link">Cisco Bases des Réseaux Informatiques</a>
+                    <a href="https://www.netacad.com/courses/data-science/introduction-data-science" target="_blank" rel="noopener" class="badge badge-link">Cisco Introduction à la Science des Données</a>
+                    <a href="https://www.akbanklab.com" target="_blank" rel="noopener" class="badge badge-link">Akbank Cybersécurité 101</a>
+                    <a href="https://www.miuul.com/egitim/python-programlama-icin-veri-bilimi" target="_blank" rel="noopener" class="badge badge-link">Miuul Python pour la Science des Données</a>
+                    <a href="https://www.miuul.com/egitim/makine-ogrenmesi" target="_blank" rel="noopener" class="badge badge-link">Miuul Apprentissage Automatique</a>
+                    <a href="https://www.miuul.com/egitim/feature-engineering" target="_blank" rel="noopener" class="badge badge-link">Miuul Ingénierie des Caractéristiques</a>
+                    <a href="https://www.france-education-international.fr/diplome/delf-dalf" target="_blank" rel="noopener" class="badge badge-link">Diplôme de Français DELF B2</a>
                 </div>
             </section>
 
@@ -526,182 +523,75 @@
 
     <dialog id="modal-lang" class="custom-modal">
         <div class="modal-header">
-            <h3>Choisir la langue</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Sélectionner la Langue</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Fermer"><span class="material-symbols">close</span></button>
         </div>
         <div class="modal-lang-links">
-            <a href="index.html" class="lang-modal-link "><span class="material-symbols">check</span> English (EN)</a>
-            <a href="index_fr.html" class="lang-modal-link active"> Français (FR)</a>
-            <a href="index_tr.html" class="lang-modal-link "> Türkçe (TR)</a>
+            <a href="index.html" class="lang-modal-link">English (EN)</a>
+            <a href="index_fr.html" class="lang-modal-link active"><span class="material-symbols">check</span> Français (FR)</a>
+            <a href="index_tr.html" class="lang-modal-link">Türkçe (TR)</a>
         </div>
     </dialog>
 
     <dialog id="modal-ie-courses" class="custom-modal">
         <div class="modal-header">
-            <h3>Cours en Génie Industriel</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Matières en Génie Industriel</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Fermer"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
             <li>Recherche Opérationnelle</li>
-            <li>Modélisation Mathématique</li>
             <li>Modélisation et Simulation</li>
-            <li>Analyse de Systèmes</li>
-            <li>Gestion de Projet</li>
-            <li>Économie de l'Ingénieur</li>
-            <li>Analyse d'Investissement</li>
-            <li>Ingénierie Financière</li>
-            <li>Planification de la Production</li>
-            <li>Gestion de la Production</li>
-            <li>ERP</li>
-            <li>Aménagement d'Usine et Manutention</li>
-            <li>Gestion de la Qualité Totale (TQM)</li>
-            <li>Statistiques</li>
-            <li>Probabilités</li>
-            <li>Introduction à la Théorie des Jeux</li>
+            <li>Analyse des Systèmes</li>
         </ul>
     </dialog>
 
     <dialog id="modal-ce-courses" class="custom-modal">
         <div class="modal-header">
-            <h3>Cours en Génie Informatique</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Matières en Ingénierie Informatique</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Fermer"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Structures de Données et Algorithmes</li>
-            <li>Robotique</li>
-            <li>Architecture Informatique</li>
-            <li>Électronique Numérique</li>
-            <li>Signaux et Systèmes</li>
-            <li>Systèmes d'Exploitation</li>
-            <li>Bases de Données Relationnelles</li>
-            <li>Bases de Données Avancées</li>
-            <li>Gestion et Sécurité des Bases de Données</li>
             <li>Réseaux Informatiques</li>
-            <li>Analyse Numérique</li>
-            <li>Programmation Orientée Objet</li>
+            <li>Signaux et Systèmes</li>
+            <li>Introduction à l'IoT</li>
         </ul>
     </dialog>
 
     <dialog id="modal-sigma-courses" class="custom-modal">
         <div class="modal-header">
-            <h3>Cours à SIGMA Clermont</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Matières à SIGMA Clermont</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Fermer"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
             <li>Gestion de Projet</li>
-            <li>Marketing</li>
             <li>Robotisation et Automatisation</li>
-            <li>Usine Numérique et Réalité Virtuelle</li>
-            <li>Modélisation et analyse des systèmes de production</li>
-            <li>Industrialisation et Lancement de Production</li>
-            <li>Ingénierie et Méthodes d'Étude</li>
-            <li>Introduction à la Science des Données</li>
-            <li>Méthodes de Management</li>
-            <li>Anglais</li>
-            <li>Français Langue Étrangère (FLE)</li>
+            <li>Méthodes d'Ingénierie et d'Étude</li>
         </ul>
     </dialog>
 
     <dialog id="modal-renault-stack" class="custom-modal">
         <div class="modal-header">
-            <h3>Compétences : Stage Renault</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Technologies du Stage chez Renault</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Fermer"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Microsoft Office</li>
-            <li>Excel</li>
             <li>Python</li>
             <li>Power Automate</li>
             <li>Power BI</li>
-            <li>Power Apps</li>
-            <li>Excel VBA</li>
-            <li>Power Query</li>
-            <li>PowerPoint</li>
-            <li>Communication</li>
-            <li>Gestion de Projet</li>
-            <li>Robotic Process Automation (RPA)</li>
-            <li>Gestion de Production</li>
-            <li>Français</li>
+            <li>Automatisation des Processus par la Robotique (RPA)</li>
         </ul>
     </dialog>
 
     <dialog id="modal-google-focus" class="custom-modal">
         <div class="modal-header">
-            <h3>Compétences : Google AI</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Domaines de Spécialisation - Google AI Academy</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Fermer"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
             <li>Intelligence Artificielle</li>
             <li>Science des Données</li>
-            <li>Machine Learning</li>
+            <li>Apprentissage Automatique</li>
             <li>Gestion de Projet</li>
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
-            <li>Scikit-learn</li>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Google Cloud</li>
-        </ul>
-    </dialog>
-
-    <dialog id="modal-yazaki-skills" class="custom-modal">
-        <div class="modal-header">
-            <h3>Compétences : Stage Yazaki</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
-        </div>
-        <ul class="expanded-list">
-            <li>Optimisation de l'efficacité des lignes de production</li>
-            <li>Étude de Temps et Mouvements</li>
-            <li>Kaizen</li>
-            <li>5S</li>
-            <li>Lean Manufacturing</li>
-            <li>Graphiques Yamazumi</li>
-            <li>AMDEC (FMEA)</li>
-            <li>Planification de Projet</li>
-            <li>Logistique</li>
-            <li>Gestion de Production</li>
-            <li>AutoCAD</li>
-            <li>Travail d'équipe</li>
-            <li>Adaptabilité</li>
-            <li>Résolution de Problèmes</li>
-            <li>Gestion de la Supply Chain</li>
-            <li>SAP ERP</li>
-        </ul>
-    </dialog>
-
-    <dialog id="modal-microsoft-office" class="custom-modal">
-        <div class="modal-header">
-            <h3>Compétences Microsoft Office</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
-        </div>
-        <ul class="expanded-list">
-            <li>Excel</li>
-            <li>PowerPoint</li>
-            <li>Word</li>
-            <li>Access</li>
-            <li>Outlook</li>
-            <li>OneNote</li>
-            <li>Teams</li>
-        </ul>
-    </dialog>
-
-    <dialog id="modal-python" class="custom-modal">
-        <div class="modal-header">
-            <h3>Compétences Python</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
-        </div>
-        <ul class="expanded-list">
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-            <li>Scikit-learn</li>
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
         </ul>
     </dialog>
 
@@ -720,16 +610,8 @@
             }, { once: true });
         }
 
-        // Robust backdrop click detection
         document.querySelectorAll('.custom-modal').forEach(dialog => {
-            dialog.addEventListener('click', e => { 
-                const rect = dialog.getBoundingClientRect();
-                const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
-                                    rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-                if (!isInDialog) {
-                    closeModal(dialog);
-                }
-            });
+            dialog.addEventListener('click', e => { if (e.target === dialog) closeModal(dialog); });
             dialog.addEventListener('cancel', e => { e.preventDefault(); closeModal(dialog); });
         });
 

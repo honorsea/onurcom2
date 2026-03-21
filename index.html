@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onur Deniz Özdemir</title>
     
+    <link rel="preload" as="image" href="src/ben3.jpeg">
+
     <script>
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -30,15 +32,13 @@
         <aside class="sidebar">
             <div class="profile-section">
                 <div class="profile-mask-wrapper">
-                    <img src="ben3.jpeg" alt="Onur Deniz Özdemir" class="profile-img">
+                    <img src="src/ben3.jpeg" alt="Onur Deniz Özdemir" class="profile-img">
                 </div>
                 <h1 class="name">Onur Deniz Özdemir</h1>
             </div>
 
             <div class="summary-contact">
-                <p class="summary">
-                    Self-motivated Computer Engineering (3rd year) and Industrial Engineering (4th year) double major student with experience in data science and analytics, and a strong interest in computer architecture and digital electronics.
-                </p>
+                <p class="summary">Self-motivated Computer Engineering (3rd year) and Industrial Engineering (4th year) double major student with experience in data science and analytics, and a strong interest in computer architecture and digital electronics.</p>
                 
                 <div class="contact-info">
                     
@@ -60,7 +60,7 @@
                         <span>+90 553 543 18 24</span>
                     </a>
                     
-                    <a href="resume.pdf" target="_blank" rel="noopener" class="contact-btn pill-shape primary-accent-btn resume-btn">
+                    <a href="src/resume.pdf" target="_blank" rel="noopener" class="contact-btn pill-shape primary-accent-btn resume-btn">
                         <span class="material-symbols" aria-hidden="true">description</span>
                         <span class="resume-text">Resume</span>
                     </a>
@@ -75,11 +75,11 @@
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>EN</span>
                         </a>
-                        <a href="index_fr.html" class="segment">
+                        <a href="index_fr.html" class="segment " aria-selected="false">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>FR</span>
                         </a>
-                        <a href="index_tr.html" class="segment">
+                        <a href="index_tr.html" class="segment " aria-selected="false">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>TR</span>
                         </a>
@@ -95,14 +95,14 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Galatasaray University</h3>
                             <h3 class="title-secondary">Industrial Engineering</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">GPA: 3.65</span>
+                        <a href="src/ie.pdf" target="_blank" rel="noopener" class="badge badge-link">GPA: 3.65</a>
                         <span class="badge">4th year</span>
                         <span class="badge">2021 – Present</span>
                         <span class="badge">Istanbul, Turkey</span>
@@ -112,14 +112,14 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Galatasaray University</h3>
                             <h3 class="title-secondary">Computer Engineering</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">GPA: 3.45</span>
+                        <a href="src/ce.pdf" target="_blank" rel="noopener" class="badge badge-link">GPA: 3.45</a>
                         <span class="badge">3rd year</span>
                         <span class="badge">Double Major</span>
                         <span class="badge">2023 – Present</span>
@@ -130,14 +130,14 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="sigma.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/sigma.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">SIGMA Clermont</h3>
                             <h3 class="title-secondary">Production and Logistics Systems</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">GPA: 3.52</span>
+                        <a href="src/sigma.pdf" target="_blank" rel="noopener" class="badge badge-link">GPA: 3.52</a>
                         <span class="badge">Erasmus Exchange</span>
                         <span class="badge">Sep. 2025 – Dec. 2025</span>
                         <span class="badge">Clermont-Ferrand, France</span>
@@ -147,7 +147,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="bel.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/bel.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Bursa Erkek Lisesi</h3>
                             <h3 class="title-secondary">High School</h3>
@@ -166,7 +166,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="renault.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/renault.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Renault Group</h3>
                             <h3 class="title-secondary">After Sales Engineering Intern</h3>
@@ -187,7 +187,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="googleai.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/googleai.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Google AI and Technology Academy</h3>
                             <h3 class="title-secondary">Trainee</h3>
@@ -208,7 +208,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="yazaki.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/yazaki.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Yazaki</h3>
                             <h3 class="title-secondary">Industrial Engineering Production Intern</h3>
@@ -233,7 +233,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="ieee.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/ieee.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Galatasaray University IEEE Student Branch</h3>
                             <h3 class="title-secondary">President</h3>
@@ -253,7 +253,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="gsuiad.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/gsuiad.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Galatasaray University AI and Data Science Applications Club</h3>
                             <h3 class="title-secondary">Co-Founder</h3>
@@ -275,18 +275,15 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Industrial Engineering Undergraduate Thesis</h3>
+                            <h3 class="title-primary">Conception of AI integrated Industry 5.0 Smart Manufacturing Systems</h3>
                             <h3 class="title-secondary">Galatasaray University</h3>
                         </div>
                     </div>
                     <div class="badges-row">
+                        <span class="badge">Undergraduate Thesis</span>
                         <span class="badge">Feb. 2026 – Present</span>
-                        <span class="badge">Istanbul, Turkey</span>
-                        <span class="badge">Industry 5.0</span>
-                        <span class="badge">Deep Learning</span>
-                        <span class="badge">LLMs (RAG)</span>
                     </div>
                     <div class="entry-description">
                         <ul>
@@ -298,15 +295,15 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="michelin.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/michelin.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Projet 2A: Légumerie Facility Planning</h3>
                             <h3 class="title-secondary">Michelin &amp; SIGMA Clermont</h3>
                         </div>
                     </div>
                     <div class="badges-row">
+                        <span class="badge">Erasmus Project</span>
                         <span class="badge">Sep. 2025 – Dec. 2025</span>
-                        <span class="badge">Clermont-Ferrand, France</span>
                     </div>
                     <div class="entry-description">
                         <ul>
@@ -319,17 +316,15 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Pintos Project</h3>
                             <h3 class="title-secondary">INF333 Operating Systems</h3>
                         </div>
                     </div>
                     <div class="badges-row">
+                        <span class="badge">Academic Project</span>
                         <span class="badge">Feb. 2025 – Jun. 2025</span>
-                        <span class="badge">C Programming</span>
-                        <span class="badge">Multithreading</span>
-                        <span class="badge">Virtual Memory</span>
                     </div>
                     <div class="entry-description">
                         <ul>
@@ -340,17 +335,15 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Istanbul Smart City Project</h3>
                             <h3 class="title-secondary">INF438 Advanced Databases</h3>
                         </div>
                     </div>
                     <div class="badges-row">
+                        <span class="badge">Academic Project</span>
                         <span class="badge">Jan. 2025</span>
-                        <span class="badge">SQL</span>
-                        <span class="badge">Google BigQuery</span>
-                        <span class="badge">Looker Studio</span>
                     </div>
                     <div class="entry-description">
                         <ul>
@@ -361,13 +354,14 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Cisco Benefit Cost Analysis</h3>
                             <h3 class="title-secondary">IND433 Enterprise Resources Planning</h3>
                         </div>
                     </div>
                     <div class="badges-row">
+                        <span class="badge">Academic Project</span>
                         <span class="badge">Feb. 2026</span>
                     </div>
                     <div class="entry-description">
@@ -379,15 +373,15 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="tubitak.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/tubitak.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Research Project Student</h3>
                             <h3 class="title-secondary">TÜBİTAK</h3>
                         </div>
                     </div>
                     <div class="badges-row">
+                        <span class="badge">Research Project</span>
                         <span class="badge">2019 &amp; 2020</span>
-                        <span class="badge">Bursa, Turkey</span>
                     </div>
                     <div class="entry-description">
                         <ul>
@@ -402,7 +396,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="ntt.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/ntt.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">NTT DATA Case Competition</h3>
                             <h3 class="title-secondary">Finalist</h3>
@@ -420,7 +414,7 @@
 
                 <article class="resume-entry">
                     <div class="entry-header">
-                        <div class="entry-logo-wrap"><img src="first.svg" alt="" class="entry-logo" loading="lazy"></div>
+                        <div class="entry-logo-wrap"><img src="src/first.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">FIRST Lego League</h3>
                             <h3 class="title-secondary">Team Member "Monster Lego"</h3>
@@ -453,7 +447,7 @@
                     <div class="skill-group">
                         <span class="skill-group-label">Programming</span>
                         <div class="badges-row">
-                            <span class="badge">Python</span>
+                            <span onclick="openModal('modal-python')" class="badge badge-link">Python</span>
                             <span class="badge">C</span>
                             <span class="badge">Java</span>
                             <span class="badge">SQL</span>
@@ -462,31 +456,40 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Data &amp; Cloud</span>
+                        <span class="skill-group-label">Data & Cloud</span>
                         <div class="badges-row">
                             <span class="badge">Power BI</span>
                             <span class="badge">Power Automate</span>
                             <span class="badge">Power Apps</span>
+                            <span class="badge">NoSQL</span>
                             <span class="badge">SQL Server</span>
                             <span class="badge">SQL Server Management Studio</span>
+                            <span class="badge">MongoDB</span>
                             <span class="badge">Apache Kafka</span>
                             <span class="badge">Apache Spark</span>
                             <span class="badge">Apache Hadoop</span>
                             <span class="badge">Google Cloud</span>
+                            <span class="badge">Google BigQuery</span>
+                            <span class="badge">Google Looker Studio</span>
+                            <span class="badge">AWS</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <span class="skill-group-label">Tools</span>
                         <div class="badges-row">
+                            <span class="badge badge-link" onclick="openModal('modal-microsoft-office')">Microsoft Office</span>
                             <span class="badge">Git</span>
-                            <span class="badge">Microsoft Office</span>
+                            <span class="badge">Docker</span>
                             <span class="badge">Wireshark</span>
                             <span class="badge">AutoCAD</span>
                             <span class="badge">CATIA V5</span>
                             <span class="badge">3DEXPERIENCE</span>
                             <span class="badge">Unity</span>
+                            <span class="badge">SAP</span>
                             <span class="badge">AnyLogic</span>
                             <span class="badge">Arena Simulation Software</span>
+                            <span class="badge">SimPy</span>
+                            <span class="badge">CAMEO Systems Modeler</span>
                         </div>
                     </div>
                     <div class="skill-group">
@@ -507,13 +510,13 @@
                 <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span> CERTIFICATIONS</h2>
 
                 <div class="badges-row">
-                    <a href="https://www.netacad.com/courses/networking/networking-basics" target="_blank" rel="noopener" class="badge badge-link">Cisco Computer Networking Basics</a>
-                    <a href="https://www.netacad.com/courses/data-science/introduction-data-science" target="_blank" rel="noopener" class="badge badge-link">Cisco Introduction to Data Science</a>
-                    <a href="https://www.akbanklab.com" target="_blank" rel="noopener" class="badge badge-link">Akbank Cybersecurity 101</a>
-                    <a href="https://www.miuul.com/egitim/python-programlama-icin-veri-bilimi" target="_blank" rel="noopener" class="badge badge-link">Miuul Python for Data Science</a>
-                    <a href="https://www.miuul.com/egitim/makine-ogrenmesi" target="_blank" rel="noopener" class="badge badge-link">Miuul Machine Learning</a>
-                    <a href="https://www.miuul.com/egitim/feature-engineering" target="_blank" rel="noopener" class="badge badge-link">Miuul Feature Engineering</a>
-                    <a href="https://www.france-education-international.fr/diplome/delf-dalf" target="_blank" rel="noopener" class="badge badge-link">DELF B2 French Diploma</a>
+                    <a href="https://www.credly.com/badges/8716045e-23d8-497f-bb69-9d23a66766db" target="_blank" rel="noopener" class="badge badge-link">Cisco Computer Networking Basics</a>
+                    <a href="https://www.credly.com/badges/3812a599-1ee6-4bf7-bcb5-0be16793d286" target="_blank" rel="noopener" class="badge badge-link">Cisco Introduction to Data Science</a>
+                    <a href="https://akbank-genclik-akademisi.verified.cv/en/verify/96385539758716" target="_blank" rel="noopener" class="badge badge-link">Akbank Cybersecurity 101</a>
+                    <a href="https://learning.miuul.com/certificates/6szrdopwkw" target="_blank" rel="noopener" class="badge badge-link">Miuul Python for Data Science</a>
+                    <a href="https://learning.miuul.com/certificates/idps32sisg" target="_blank" rel="noopener" class="badge badge-link">Miuul Machine Learning</a>
+                    <a href="https://learning.miuul.com/certificates/ktbcw9q4t6" target="_blank" rel="noopener" class="badge badge-link">Miuul Feature Engineering</a>
+                    <a href="src/delf.pdf" target="_blank" rel="noopener" class="badge badge-link">DELF B2 French Diploma</a>
                 </div>
             </section>
 
@@ -528,8 +531,8 @@
         </div>
         <div class="modal-lang-links">
             <a href="index.html" class="lang-modal-link active"><span class="material-symbols">check</span> English (EN)</a>
-            <a href="index_fr.html" class="lang-modal-link">Français (FR)</a>
-            <a href="index_tr.html" class="lang-modal-link">Türkçe (TR)</a>
+            <a href="index_fr.html" class="lang-modal-link "> Français (FR)</a>
+            <a href="index_tr.html" class="lang-modal-link "> Türkçe (TR)</a>
         </div>
     </dialog>
 
@@ -540,8 +543,21 @@
         </div>
         <ul class="expanded-list">
             <li>Operations Research</li>
+            <li>Mathematical Modelling</li>
             <li>Modeling and Simulation</li>
             <li>Systems Analysis</li>
+            <li>Project Management</li>
+            <li>Engineering Economics</li>
+            <li>Investment Analysis</li>
+            <li>Finance Engineering</li>
+            <li>Production Planning</li>
+            <li>Production Management</li>
+            <li>ERP</li>
+            <li>Plant Layout And Materials Handling</li>
+            <li>Total Quality Management</li>
+            <li>Statistics</li>
+            <li>Probability</li>
+            <li>Introduction to Game Theory</li>
         </ul>
     </dialog>
 
@@ -551,9 +567,18 @@
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Computer Networks</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Robotics</li>
+            <li>Computer Architecture</li>
+            <li>Digital Electronics</li>
             <li>Signals and Systems</li>
-            <li>Introduction to IoT</li>
+            <li>Operating Systems</li>
+            <li>Relational Databases</li>
+            <li>Advanced Databases</li>
+            <li>Database Management and Security</li>
+            <li>Computer Networks</li>
+            <li>Numerical Analysis</li>
+            <li>Object-Oriented Programming</li>
         </ul>
     </dialog>
 
@@ -564,27 +589,45 @@
         </div>
         <ul class="expanded-list">
             <li>Project Management</li>
+            <li>Marketing</li>
             <li>Robotization and Automation</li>
+            <li>Digital Factory and Virtual Reality</li>
+            <li>Modeling and analysis of production systems</li>
+            <li>Industrialization and Production launch</li>
             <li>Engineering and Study Methods</li>
+            <li>Introduction to Data Science</li>
+            <li>Management Methods</li>
+            <li>English</li>
+            <li>FLE</li>
         </ul>
     </dialog>
 
     <dialog id="modal-renault-stack" class="custom-modal">
         <div class="modal-header">
-            <h3>Renault Internship Tech Stack</h3>
+            <h3>Renault Internship Relevant Skills</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
+            <li>Microsoft Office</li>
+            <li>Excel</li>
             <li>Python</li>
             <li>Power Automate</li>
             <li>Power BI</li>
+            <li>Power Apps</li>
+            <li>Excel VBA</li>
+            <li>Power Query</li>
+            <li>PowerPoint</li>
+            <li>Communication</li>
+            <li>Project Management</li>
             <li>Robotic Process Automation (RPA)</li>
+            <li>Production Management</li>
+            <li>French</li>
         </ul>
     </dialog>
 
     <dialog id="modal-google-focus" class="custom-modal">
         <div class="modal-header">
-            <h3>Google AI Academy Focus Areas</h3>
+            <h3>Google AI Relevant Skills</h3>
             <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
@@ -592,6 +635,73 @@
             <li>Data Science</li>
             <li>Machine Learning</li>
             <li>Project Management</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>Scikit-learn</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Google Cloud</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-yazaki-skills" class="custom-modal">
+        <div class="modal-header">
+            <h3>Yazaki Internship Relevant Skills</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+        </div>
+        <ul class="expanded-list">
+            <li>Production Line Efficiency Optimization</li>
+            <li>Time &amp; Motion Study</li>
+            <li>Kaizen</li>
+            <li>5S</li>
+            <li>Lean Manufacturing</li>
+            <li>Yamazumi Charts</li>
+            <li>FMEA</li>
+            <li>Project Planning</li>
+            <li>Logistics</li>
+            <li>Production Management</li>
+            <li>AutoCAD</li>
+            <li>Teamwork</li>
+            <li>Adaptability</li>
+            <li>Problem Solving</li>
+            <li>Supply Chain Management</li>
+            <li>SAP ERP</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-microsoft-office" class="custom-modal">
+        <div class="modal-header">
+            <h3>Microsoft Office Skills</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+        </div>
+        <ul class="expanded-list">
+            <li>Excel</li>
+            <li>PowerPoint</li>
+            <li>Word</li>
+            <li>Access</li>
+            <li>Outlook</li>
+            <li>OneNote</li>
+            <li>Teams</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-python" class="custom-modal">
+        <div class="modal-header">
+            <h3>Python Skills</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+        </div>
+        <ul class="expanded-list">
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Scikit-learn</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
         </ul>
     </dialog>
 
@@ -610,8 +720,16 @@
             }, { once: true });
         }
 
+        // Robust backdrop click detection
         document.querySelectorAll('.custom-modal').forEach(dialog => {
-            dialog.addEventListener('click', e => { if (e.target === dialog) closeModal(dialog); });
+            dialog.addEventListener('click', e => { 
+                const rect = dialog.getBoundingClientRect();
+                const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+                                    rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+                if (!isInDialog) {
+                    closeModal(dialog);
+                }
+            });
             dialog.addEventListener('cancel', e => { e.preventDefault(); closeModal(dialog); });
         });
 

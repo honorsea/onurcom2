@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onur Deniz Özdemir</title>
     
-    <link rel="preload" as="image" href="src/ben3.jpeg">
-
     <script>
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -38,7 +36,9 @@
             </div>
 
             <div class="summary-contact">
-                <p class="summary">Azimli ve motivasyonu yüksek, veri bilimi alanında deneyimli, bilgisayar mimarisi ile sayısal elektroniğe ilgi duyan Bilgisayar Mühendisliği 3. sınıf ve Endüstri Mühendisliği 4. sınıf çift anadal öğrencisi.</p>
+                <p class="summary">
+                    Azimli ve motivasyonu yüksek, veri bilimi alanında deneyimli, bilgisayar mimarisi ile sayısal elektroniğe ilgi duyan Bilgisayar Mühendisliği 3. sınıf ve Endüstri Mühendisliği 4. sınıf çift anadal öğrencisi.
+                </p>
                 
                 <div class="contact-info">
                     
@@ -47,11 +47,11 @@
                         <span>onurdenizozdemir@icloud.com</span>
                     </a>
                     
-                    <button id="theme-toggle" class="contact-btn squircle-shape theme-btn" aria-label="Toggle Theme">
+                    <button id="theme-toggle" class="contact-btn squircle-shape theme-btn" aria-label="Temayı Değiştir">
                         <span class="material-symbols" id="theme-icon" aria-hidden="true">dark_mode</span>
                     </button>
 
-                    <button class="contact-btn squircle-shape lang-mobile-btn" onclick="openModal('modal-lang')" aria-label="Change Language">
+                    <button class="contact-btn squircle-shape lang-mobile-btn" onclick="openModal('modal-lang')" aria-label="Dili Değiştir">
                         <span class="material-symbols" aria-hidden="true">language</span>
                     </button>
 
@@ -71,11 +71,11 @@
                     </a>
 
                     <div class="segmented-control lang-desktop-btn" id="lang-control">
-                        <a href="index.html" class="segment " aria-selected="false">
+                        <a href="index.html" class="segment">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>EN</span>
                         </a>
-                        <a href="index_fr.html" class="segment " aria-selected="false">
+                        <a href="index_fr.html" class="segment">
                             <span class="material-symbols selected-icon" aria-hidden="true">check</span>
                             <span>FR</span>
                         </a>
@@ -102,9 +102,9 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/ie.pdf" target="_blank" rel="noopener" class="badge badge-link">GANO: 3,64 </a>
+                        <span class="badge">GANO: 3.65</span>
                         <span class="badge">4. Sınıf</span>
-                        <span class="badge">2021 – 2026 </span>
+                        <span class="badge">2021 – Günümüz</span>
                         <span class="badge">İstanbul, Türkiye</span>
                         <button class="badge badge-outlined" onclick="openModal('modal-ie-courses')">Dersler</button>
                     </div>
@@ -119,10 +119,10 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/ce.pdf" target="_blank" rel="noopener" class="badge badge-link">GANO: 3,45 </a>
+                        <span class="badge">GANO: 3.45</span>
                         <span class="badge">3. Sınıf</span>
                         <span class="badge">Çift Anadal</span>
-                        <span class="badge">2023 – 2027 </span>
+                        <span class="badge">2023 – Günümüz</span>
                         <span class="badge">İstanbul, Türkiye</span>
                         <button class="badge badge-outlined" onclick="openModal('modal-ce-courses')">Dersler</button>
                     </div>
@@ -133,14 +133,14 @@
                         <div class="entry-logo-wrap"><img src="src/sigma.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">SIGMA Clermont</h3>
-                            <h3 class="title-secondary">Üretim ve Lojistik Sistemleri </h3>
+                            <h3 class="title-secondary">Üretim ve Lojistik Sistemleri</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <a href="src/sigma.pdf" target="_blank" rel="noopener" class="badge badge-link">GANO: 3.52</a>
+                        <span class="badge">GANO: 3.52</span>
                         <span class="badge">Erasmus Değişim Programı</span>
-                        <span class="badge">2025 </span>
-                        <span class="badge">Clermont-Ferrand, France</span>
+                        <span class="badge">Eyl. 2025 – Ara. 2025</span>
+                        <span class="badge">Clermont-Ferrand, Fransa</span>
                         <button class="badge badge-outlined" onclick="openModal('modal-sigma-courses')">Dersler</button>
                     </div>
                 </article>
@@ -154,8 +154,8 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">YKS sınavında dil alanında 292. & sayısal alanında 8081.</span>
-                        <span class="badge">2021 Mezunu</span>
+                        <span class="badge">Yükseköğretim Kurumları Sınavı'nda (YKS) Türkiye 292.si</span>
+                        <span class="badge">Mezuniyet 2021</span>
                         <span class="badge">Bursa, Türkiye</span>
                     </div>
                 </article>
@@ -168,19 +168,19 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/renault.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Renault</h3>
+                            <h3 class="title-primary">Renault Group</h3>
                             <h3 class="title-secondary">Satış Sonrası Mühendislik Stajyeri</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Tem. 2025 – Ağu. 2025 </span>
+                        <span class="badge">Tem. 2025 – Ağu. 2025</span>
                         <span class="badge">Bursa, Türkiye</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-renault-stack')">Beceriler</button>
+                        <button class="badge badge-outlined" onclick="openModal('modal-renault-stack')">İlgili Beceriler</button>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Microsoft Power Automate, Power BI ve Power Apps kullanarak çeşitli dijital dönüşüm projeleri geliştirdim.</li>
-                            <li>Bir sürecin çevrim süresinde %98'lik bir kazanım elde ettim. (9:33 dakikadan 8 saniyeye) Veri girişi hata oranını %0'a indirerek 0,02 TSE'lik bir iş gücü tasarrufu sağladım.</li>
+                            <li>Üretim verilerini analiz etmek için Python, Power Automate ve Power BI kullanarak RPA tabanlı bir dijitalleştirme projesi gerçekleştirdim.</li>
+                            <li>Ortalama süreç döngü süresinde %0 veri giriş hatası oranıyla <strong>%98 iyileşme</strong> (9:33 dakikadan 8 saniyeye) elde ettim.</li>
                         </ul>
                     </div>
                 </article>
@@ -190,18 +190,18 @@
                         <div class="entry-logo-wrap"><img src="src/googleai.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Google Yapay Zeka ve Teknoloji Akademisi</h3>
-                            <h3 class="title-secondary">Trainee</h3>
+                            <h3 class="title-secondary">Stajyer</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">2024 – 2025 </span>
+                        <span class="badge">Kas. 2024 – Haz. 2025</span>
                         <span class="badge">Uzaktan</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-google-focus')">Beceriler</button>
+                        <button class="badge badge-outlined" onclick="openModal('modal-google-focus')">İlgili Beceriler</button>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Yapay Zeka, Veri Bilimi, Makine Öğrenmesi ve Proje Yönetimi alanlarında kapsamlı eğitimler aldım. Bu alanlarda gerçek dünya projeleri geliştirdim.</li>
-                            <li>25.000 başvuru arasından seçilen 2.000 asil bursiyerden biri olarak yer aldım.</li>
+                            <li>Yapay Zeka, Veri Bilimi, Makine Öğrenmesi ve Proje Yönetimi alanlarında aylarca eğitim aldı; her alanda gerçek dünya projeleri geliştirdim.</li>
+                            <li> 25.000 başvuru arasından <strong>2.000 asil bursiyerden</strong> biri olarak seçildim. </li>
                         </ul>
                     </div>
                 </article>
@@ -210,37 +210,37 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/yazaki.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">YAZAKI</h3>
+                            <h3 class="title-primary">Yazaki</h3>
                             <h3 class="title-secondary">Endüstri Mühendisliği Üretim Stajyeri</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Temmuz 2024 </span>
+                        <span class="badge">Tem. 2024</span>
                         <span class="badge">Bursa, Türkiye</span>
-                        <button class="badge badge-outlined" onclick="openModal('modal-yazaki-skills')">Beceriler</button>
+                        <button class="badge badge-outlined" onclick="openModal('modal-yazaki-skills')">İlgili Beceriler</button>
                     </div>
                     <div class="entry-description">
                         <ul>
                             <li>Bir üretim hattını analiz ederek iyileştirme noktası tespit ettim ve verimliliği arttırmaya yönelik bir çalışma gerçekleştirdim.</li>
-                            <li>Zaman etüdü, Yalın Üretim, Kaizen, 5S, SAP, FMEA ve Sürekli İyileştirme konularında deneyim kazandım.</li>
+                            <li>Proje Planlama, Üretim Yönetimi, Lojistik ve Tedarik Zinciri departmanlarında deneyim kazandım.</li>
                         </ul>
                     </div>
                 </article>
             </section>
 
             <section class="resume-section" id="leadership">
-                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">podium</span> LİDERLİK & AKTİVİTELER </h2>
+                <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">podium</span> LİDERLİK</h2>
 
                 <article class="resume-entry">
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/ieee.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">Galatasaray Üniversitesi IEEE Öğrenci Kolu</h3>
-                            <h3 class="title-secondary">Kulüp Başkanı</h3>
+                            <h3 class="title-secondary">Başkan</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">2023 – 2025 </span>
+                        <span class="badge">Haz. 2023 – Haz. 2025</span>
                         <span class="badge">İstanbul, Türkiye</span>
                     </div>
                     <div class="entry-description">
@@ -255,16 +255,16 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsuiad.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">GSÜ Yapay Zeka ve Veri Bilimi Uygulamaları Kulübü</h3>
-                            <h3 class="title-secondary">Kurucu Üye</h3>
+                            <h3 class="title-primary">Galatasaray Üniversitesi Yapay Zeka ve Veri Bilimi Uygulamaları Kulübü</h3>
+                            <h3 class="title-secondary">Kurucu Ortak</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Mart 2024 – Günümüz</span>
+                        <span class="badge">Mar. 2024 – Günümüz</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Üniversite bünyesindeki ilk yapay zeka öğrenci topluluğunu 11 ekip arkadaşımla birlikte kurdum.</li>
+                            <li>11 diğer üyeyle birlikte üniversitedeki ilk yapay zeka öğrenci topluluğunu kurdum.</li>
                         </ul>
                     </div>
                 </article>
@@ -277,18 +277,21 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Yapay Zeka Entegre Endüstri 5.0 Akıllı Üretim Sistemleri Tasarımı</h3>
+                            <h3 class="title-primary">Endüstri Mühendisliği Bitirme Projesi</h3>
                             <h3 class="title-secondary">Galatasaray Üniversitesi</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Bitirme Projesi</span>
-                        <span class="badge">Şub 2026 – Günümüz</span>
+                        <span class="badge">Şub. 2026 – Günümüz</span>
+                        <span class="badge">İstanbul, Türkiye</span>
+                        <span class="badge">Endüstri 5.0</span>
+                        <span class="badge">Derin Öğrenme</span>
+                        <span class="badge">LLM (RAG)</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Üretim hatlarında otonom ve gerçek zamanlı akıl yürütme sağlamak amacıyla çoklu ajan yapay zeka sistemleriyle entegre bir akıllı üretim sistemi geliştiriyorum.</li>
-                            <li>Proje kapsamında derin öğrenme, kolaboratif robotik, RAG destekli büyük dil modelleri ve dijital ikiz teknolojileri kullanıyorum.</li>
+                            <li>Üretim hatlarında otonom, gerçek zamanlı akıl yürütme sağlamak için çok ajanlı yapay zeka sistemleriyle entegre edilmiş bir Endüstri 5.0 akıllı üretim sistemi projesi geliştiriyorum.</li>
+                            <li>Proje boyunca derin öğrenme, işbirlikçi robotik, artırılmış arama üretimli (RAG) büyük dil modelleri ve dijital ikizler kullanılıyor.</li>
                         </ul>
                     </div>
                 </article>
@@ -297,19 +300,19 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/michelin.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Projet 2A: Légumerie Tesis Planlama</h3>
-                            <h3 class="title-secondary">Michelin & SIGMA Clermont</h3>
+                            <h3 class="title-primary">Proje 2A: Légumerie Tesis Planlama Projesi</h3>
+                            <h3 class="title-secondary">Michelin &amp; SIGMA Clermont</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Erasmus Projesi</span>
-                        <span class="badge">Eyl 2025 – Ara 2025</span>
+                        <span class="badge">Eyl. 2025 – Ara. 2025</span>
+                        <span class="badge">Clermont-Ferrand, Fransa</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Michelin iş birliğiyle, bölgesel talep ve üretici kapasitesini analiz etmek için veri bilimi yöntemlerini kullanarak bir sebze işleme tesisi planladım.</li>
-                            <li>Sistem mühendisliği prensipleriyle proje kapsamını tanımladım; gerçek dünya kısıtları altında tesis yerleşimi tasarladım.</li>
-                            <li>SIGMA Clermont'taki Erasmus değişimim sırasında bir ekip içinde akademik bir proje olarak gerçekleştirildi.</li>
+                            <li>Bölgesel talebi, üretici kapasitesini ve sebze mevsimselliğini analiz etmek için veri bilimini kullanarak bir sebze işleme tesisi planlamak üzere Michelin ile işbirliği yaptım.</li>
+                            <li>Proje kapsamını ve kullanım senaryolarını tanımlamak, ayrıca tesis yerleşimini gerçek dünya kısıtlamaları altında tasarlamak için sistem mühendisliğini uyguladım.</li>
+                            <li>SIGMA Clermont'taki Erasmus değişimi sırasında bir ekip içinde akademik bir proje olarak yürütüldü.</li>
                         </ul>
                     </div>
                 </article>
@@ -323,12 +326,14 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Akademik Proje</span>
-                        <span class="badge">Şub 2025 – Haz 2025</span>
+                        <span class="badge">Şub. 2025 – Haz. 2025</span>
+                        <span class="badge">C Programlama</span>
+                        <span class="badge">Çoklu İş Parçacığı (Multithreading)</span>
+                        <span class="badge">Sanal Bellek</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>C dilinde x86 tabanlı çalışan bir işletim sistemi çekirdeği programladım; çoklu izlek ve sanal bellek yönetimi gibi alt seviye bileşenleri uyguladım.</li>
+                            <li>Çoklu iş parçacığı, öncelik planlama ve sanal bellek yönetimi gibi düşük seviyeli bileşenleri uygulayarak işlevsel bir x86 işletim sistemi (Pintos) çekirdeğini C dilinde programladım.</li>
                         </ul>
                     </div>
                 </article>
@@ -338,16 +343,18 @@
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">İstanbul Akıllı Şehir Projesi</h3>
-                            <h3 class="title-secondary">INF438 İleri Veri Tabanları</h3>
+                            <h3 class="title-secondary">INF438 İleri Veritabanları</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Akademik Proje</span>
-                        <span class="badge">Oca 2025</span>
+                        <span class="badge">Oca. 2025</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">Google BigQuery</span>
+                        <span class="badge">Looker Studio</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>İstanbul Büyükşehir Belediyesi Açık Veri Portalı'ndan zaman serisi verilerini işlemek için SQL, BigQuery ve Looker Studio kullanarak gerçek zamanlı kentsel karar verme için bir ETL hattı tasarladım.</li>
+                            <li>Gerçek zamanlı kentsel karar alma süreçleri için SQL, BigQuery ve Looker Studio kullanarak İBB Açık Veri Portalı'ndan zaman serisi verilerini işleyen bir ETL düzeni tasarladım.</li>
                         </ul>
                     </div>
                 </article>
@@ -356,17 +363,16 @@
                     <div class="entry-header">
                         <div class="entry-logo-wrap"><img src="src/gsu.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
-                            <h3 class="title-primary">Cisco Maliyet Fayda Analizi</h3>
-                            <h3 class="title-secondary">IND433 Kurumsal Kaynak Planlama</h3>
+                            <h3 class="title-primary">Cisco Maliyet-fayda Analizi</h3>
+                            <h3 class="title-secondary">IND433 Enterprise Resources Planning</h3>
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Akademik Proje</span>
-                        <span class="badge">Şub 2026</span>
+                        <span class="badge">Şub. 2026</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Cisco'nun ERP yenilemesinin kapsamlı bir değerlendirmesini yaptım: risk ayarlı getiriler için WACC/CAPM hesapladım, S-eğri yatırım aşamalandırması geliştirdim ve veri odaklı bir ROI önerisi için duyarlılık analizi gerçekleştirdim.</li>
+                            <li>Cisco'nun ERP revizyonunun kapsamlı bir değerlemesini gerçekleştirdi: riske göre düzeltilmiş getiriler için WACC/CAPM hesapladı, S eğrisi yatırım aşamalandırması geliştirdi ve veriye dayalı bir yatırım getirisi (ROI) önerisi için duyarlılık analizi yaptım.</li>
                         </ul>
                     </div>
                 </article>
@@ -380,12 +386,12 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Araştırma Projesi</span>
-                        <span class="badge">2019 & 2020 </span>
+                        <span class="badge">2019 &amp; 2020</span>
+                        <span class="badge">Bursa, Türkiye</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>2204-A programı kapsamında 2020 yılında 'Maglev teknolojisi, ulaşım ve bisikletlere adaptasyonu', 2019 yılında ise 'Kinetik enerjiyle kendi kendine çalışan fare' konularında 2 araştırma projesi geliştirdim.</li>
+                            <li>2204-A programı kapsamında iki araştırma projesi geliştirdim: Bisikletlerde Maglev teknolojisi adaptasyonu (2020) ve kinetik enerji kullanan kendi enerjisini üreten bilgisayar fareleri (2019).</li>
                         </ul>
                     </div>
                 </article>
@@ -403,11 +409,11 @@
                         </div>
                     </div>
                     <div class="badges-row">
-                        <span class="badge">Aralık 2024 </span>
+                        <span class="badge">Ara. 2024</span>
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Bir danışman atama problemi için 3 saat içerisinde proaktif risk yönetimi ve yeni nesil teknolojileri entegre ettiğimiz bir çözüm ile 2. olduk.</li>
+                            <li>Bir kaynak tahsisi problemi için 3 saat içinde proaktif risk yönetimi ile sürdürülebilir, veriye dayalı bir çözüm geliştirdik.</li>
                         </ul>
                     </div>
                 </article>
@@ -417,7 +423,7 @@
                         <div class="entry-logo-wrap"><img src="src/first.svg" alt="" class="entry-logo" loading="lazy"></div>
                         <div class="entry-titles">
                             <h3 class="title-primary">FIRST Lego League</h3>
-                            <h3 class="title-secondary">"Monster Lego" Takım Üyesi</h3>
+                            <h3 class="title-secondary">"Monster Lego" Ekip Üyesi</h3>
                         </div>
                     </div>
                     <div class="badges-row">
@@ -425,7 +431,7 @@
                     </div>
                     <div class="entry-description">
                         <ul>
-                            <li>Lego Mindstorms kullanarak çeşitli parkurları aşması için sensör tabanlı otonom bir robot inşa ettik.</li>
+                            <li>Karmaşık engel parkurlarını aşmak için Lego Mindstorms kullanarak sensör tabanlı otonom bir robot inşa ettik.</li>
                         </ul>
                     </div>
                 </article>
@@ -441,13 +447,13 @@
                             <span class="badge lang-badge">İngilizce <span class="lang-level">C1</span></span>
                             <span class="badge lang-badge">Fransızca <span class="lang-level">B2</span></span>
                             <span class="badge lang-badge">Almanca <span class="lang-level">A1</span></span>
-                            <span class="badge lang-badge">Türkçe <span class="lang-level">Ana Dil</span></span>
+                            <span class="badge lang-badge">Türkçe <span class="lang-level">Anadil</span></span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <span class="skill-group-label">Programlama</span>
                         <div class="badges-row">
-                            <span onclick="openModal('modal-python')" class="badge badge-link">Python</span>
+                            <span class="badge">Python</span>
                             <span class="badge">C</span>
                             <span class="badge">Java</span>
                             <span class="badge">SQL</span>
@@ -456,48 +462,39 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Veri & Bulut</span>
+                        <span class="skill-group-label">Veri ve Bulut</span>
                         <div class="badges-row">
                             <span class="badge">Power BI</span>
                             <span class="badge">Power Automate</span>
                             <span class="badge">Power Apps</span>
-                            <span class="badge">NoSQL</span>
                             <span class="badge">SQL Server</span>
                             <span class="badge">SQL Server Management Studio</span>
-                            <span class="badge">MongoDB</span>
                             <span class="badge">Apache Kafka</span>
                             <span class="badge">Apache Spark</span>
                             <span class="badge">Apache Hadoop</span>
                             <span class="badge">Google Cloud</span>
-                            <span class="badge">Google BigQuery</span>
-                            <span class="badge">Google Looker Studio</span>
-                            <span class="badge">AWS</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <span class="skill-group-label">Araçlar</span>
                         <div class="badges-row">
-                            <span class="badge badge-link" onclick="openModal('modal-microsoft-office')">Microsoft Office</span>
                             <span class="badge">Git</span>
-                            <span class="badge">Docker</span>
+                            <span class="badge">Microsoft Office</span>
                             <span class="badge">Wireshark</span>
                             <span class="badge">AutoCAD</span>
                             <span class="badge">CATIA V5</span>
                             <span class="badge">3DEXPERIENCE</span>
                             <span class="badge">Unity</span>
-                            <span class="badge">SAP</span>
                             <span class="badge">AnyLogic</span>
                             <span class="badge">Arena Simulation Software</span>
-                            <span class="badge">SimPy</span>
-                            <span class="badge">CAMEO Systems Modeler</span>
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Soft Skills</span>
+                        <span class="skill-group-label">Kişisel Beceriler</span>
                         <div class="badges-row">
                             <span class="badge">Liderlik</span>
                             <span class="badge">Takım Çalışması</span>
-                            <span class="badge">Uyum Sağlama</span>
+                            <span class="badge">Uyumluluk</span>
                             <span class="badge">Proje Yönetimi</span>
                             <span class="badge">Analitik Düşünme</span>
                             <span class="badge">Zaman Yönetimi</span>
@@ -510,13 +507,13 @@
                 <h2 class="section-title"><span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span> SERTİFİKALAR</h2>
 
                 <div class="badges-row">
-                    <a href="https://www.credly.com/badges/8716045e-23d8-497f-bb69-9d23a66766db" target="_blank" rel="noopener" class="badge badge-link">Cisco Bilgisayar Ağları Temelleri</a>
-                    <a href="https://www.credly.com/badges/3812a599-1ee6-4bf7-bcb5-0be16793d286" target="_blank" rel="noopener" class="badge badge-link">Cisco Veri Bilimine Giriş</a>
-                    <a href="https://akbank-genclik-akademisi.verified.cv/en/verify/96385539758716" target="_blank" rel="noopener" class="badge badge-link">Akbank Sibergüvenlik 101</a>
-                    <a href="https://learning.miuul.com/certificates/6szrdopwkw" target="_blank" rel="noopener" class="badge badge-link">Miuul Veri Bilimi için Python</a>
-                    <a href="https://learning.miuul.com/certificates/idps32sisg" target="_blank" rel="noopener" class="badge badge-link">Miuul Makine Öğrenmesi</a>
-                    <a href="https://learning.miuul.com/certificates/ktbcw9q4t6" target="_blank" rel="noopener" class="badge badge-link">Miuul Özellik Mühendisliği</a>
-                    <a href="src/delf.pdf" target="_blank" rel="noopener" class="badge badge-link">DELF B2 Fransızca Sertifikası</a>
+                    <a href="https://www.netacad.com/courses/networking/networking-basics" target="_blank" rel="noopener" class="badge badge-link">Cisco Bilgisayar Ağları Temelleri</a>
+                    <a href="https://www.netacad.com/courses/data-science/introduction-data-science" target="_blank" rel="noopener" class="badge badge-link">Cisco Veri Bilimine Giriş</a>
+                    <a href="https://www.akbanklab.com" target="_blank" rel="noopener" class="badge badge-link">Akbank Siber Güvenlik 101</a>
+                    <a href="https://www.miuul.com/egitim/python-programlama-icin-veri-bilimi" target="_blank" rel="noopener" class="badge badge-link">Miuul Veri Bilimi için Python</a>
+                    <a href="https://www.miuul.com/egitim/makine-ogrenmesi" target="_blank" rel="noopener" class="badge badge-link">Miuul Makine Öğrenmesi</a>
+                    <a href="https://www.miuul.com/egitim/feature-engineering" target="_blank" rel="noopener" class="badge badge-link">Miuul Özellik Mühendisliği</a>
+                    <a href="https://www.france-education-international.fr/diplome/delf-dalf" target="_blank" rel="noopener" class="badge badge-link">DELF B2 Fransızca Diploması</a>
                 </div>
             </section>
 
@@ -526,182 +523,75 @@
 
     <dialog id="modal-lang" class="custom-modal">
         <div class="modal-header">
-            <h3>Dil Seçiniz</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Dil Seçin</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Kapat"><span class="material-symbols">close</span></button>
         </div>
         <div class="modal-lang-links">
-            <a href="index.html" class="lang-modal-link "><span class="material-symbols">check</span> İngilizce (EN)</a>
-            <a href="index_fr.html" class="lang-modal-link "> Fransızca (FR)</a>
-            <a href="index_tr.html" class="lang-modal-link active"> Türkçe (TR)</a>
+            <a href="index.html" class="lang-modal-link">English (EN)</a>
+            <a href="index_fr.html" class="lang-modal-link">Français (FR)</a>
+            <a href="index_tr.html" class="lang-modal-link active"><span class="material-symbols">check</span> Türkçe (TR)</a>
         </div>
     </dialog>
 
     <dialog id="modal-ie-courses" class="custom-modal">
         <div class="modal-header">
             <h3>Endüstri Mühendisliği Dersleri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Kapat"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
             <li>Yöneylem Araştırması</li>
-            <li>Matematiksel Modelleme</li>
             <li>Modelleme ve Simülasyon</li>
             <li>Sistem Analizi</li>
-            <li>Proje Yönetimi</li>
-            <li>Mühendislik Ekonomisi</li>
-            <li>Yatırım Analizi</li>
-            <li>Finans Mühendisliği</li>
-            <li>Üretim Planlama</li>
-            <li>Üretim Yönetimi</li>
-            <li>ERP</li>
-            <li>Tesis Planlama</li>
-            <li>Toplam Kalite Yönetimi</li>
-            <li>İstatistik</li>
-            <li>Olasılık</li>
-            <li>Oyun Teorisine Giriş</li>
         </ul>
     </dialog>
 
     <dialog id="modal-ce-courses" class="custom-modal">
         <div class="modal-header">
             <h3>Bilgisayar Mühendisliği Dersleri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Kapat"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Veri Yapıları ve Algoritmalar</li>
-            <li>Robotik</li>
-            <li>Bilgisayar Mimarisi</li>
-            <li>Sayısal Elektronik</li>
-            <li>Sinyaller ve Sistemler</li>
-            <li>İşletim Sistemleri</li>
-            <li>İlişkisel Veri Tabanları</li>
-            <li>İleri Veri Tabanları</li>
-            <li>Veri Tabanı Yönetimi ve Güvenliği</li>
             <li>Bilgisayar Ağları</li>
-            <li>Sayısal Analiz</li>
-            <li>Nesneye Yönelik Programlama</li>
+            <li>Sinyaller ve Sistemler</li>
+            <li>IoT'ye Giriş</li>
         </ul>
     </dialog>
 
     <dialog id="modal-sigma-courses" class="custom-modal">
         <div class="modal-header">
             <h3>SIGMA Clermont Dersleri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Kapat"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
             <li>Proje Yönetimi</li>
-            <li>Pazarlama</li>
-            <li>Robotizasyon ve Otomasyon</li>
-            <li>Dijital Fabrika ve Sanal Gerçeklik</li>
-            <li>Üretim Sistemlerinin Modellemesi ve Analizi</li>
-            <li>Endüstriyelleşme ve Üretim Başlatma</li>
-            <li>Mühendislik ve Araştırma Yöntemleri</li>
-            <li>Veri Bilimine Giriş</li>
-            <li>Yönetim Yöntemleri</li>
-            <li>İngilizce</li>
-            <li>Fransızca</li>
+            <li>Robotik ve Otomasyon</li>
+            <li>Mühendislik ve Çalışma Yöntemleri</li>
         </ul>
     </dialog>
 
     <dialog id="modal-renault-stack" class="custom-modal">
         <div class="modal-header">
-            <h3>Renault Staj Becerileri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Renault Stajı Teknoloji Yığını</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Kapat"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
-            <li>Microsoft Office</li>
-            <li>Excel</li>
             <li>Python</li>
             <li>Power Automate</li>
             <li>Power BI</li>
-            <li>Power Apps</li>
-            <li>Excel VBA</li>
-            <li>Power Query</li>
-            <li>PowerPoint</li>
-            <li>İletişim</li>
-            <li>Proje Yönetimi</li>
             <li>Robotik Süreç Otomasyonu (RPA)</li>
-            <li>Üretim Yönetimi</li>
-            <li>Fransızca</li>
         </ul>
     </dialog>
 
     <dialog id="modal-google-focus" class="custom-modal">
         <div class="modal-header">
-            <h3>Google Yapay Zeka ve Teknoloji Akademisi Becerileri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
+            <h3>Google AI Academy Odak Alanları</h3>
+            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Kapat"><span class="material-symbols">close</span></button>
         </div>
         <ul class="expanded-list">
             <li>Yapay Zeka</li>
             <li>Veri Bilimi</li>
             <li>Makine Öğrenmesi</li>
             <li>Proje Yönetimi</li>
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
-            <li>Scikit-learn</li>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Google Cloud</li>
-        </ul>
-    </dialog>
-
-    <dialog id="modal-yazaki-skills" class="custom-modal">
-        <div class="modal-header">
-            <h3>Yazaki Staj Becerileri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
-        </div>
-        <ul class="expanded-list">
-            <li>Üretim Hattı Verimlilik Analizi</li>
-            <li>İş Zamanı Etüdü</li>
-            <li>Kaizen</li>
-            <li>5S</li>
-            <li>Yalın Üretim</li>
-            <li>Yamazumi Şemaları</li>
-            <li>FMEA</li>
-            <li>Proje Yönetimi</li>
-            <li>Lojistik</li>
-            <li>Üretim Yönetimi</li>
-            <li>AutoCAD</li>
-            <li>Takım Çalışması</li>
-            <li>Uyum Sağlama</li>
-            <li>Problem Çözme</li>
-            <li>Tedarik Zinciri Yönetimi</li>
-            <li>SAP ERP</li>
-        </ul>
-    </dialog>
-
-    <dialog id="modal-microsoft-office" class="custom-modal">
-        <div class="modal-header">
-            <h3>Microsoft Office Becerileri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
-        </div>
-        <ul class="expanded-list">
-            <li>Excel</li>
-            <li>PowerPoint</li>
-            <li>Word</li>
-            <li>Access</li>
-            <li>Outlook</li>
-            <li>OneNote</li>
-            <li>Teams</li>
-        </ul>
-    </dialog>
-
-    <dialog id="modal-python" class="custom-modal">
-        <div class="modal-header">
-            <h3>Python Becerileri</h3>
-            <button class="close-btn" onclick="closeModal(this.closest('dialog'))" aria-label="Close"><span class="material-symbols">close</span></button>
-        </div>
-        <ul class="expanded-list">
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-            <li>Scikit-learn</li>
-            <li>TensorFlow</li>
-            <li>PyTorch</li>
         </ul>
     </dialog>
 
@@ -720,16 +610,8 @@
             }, { once: true });
         }
 
-        // Robust backdrop click detection
         document.querySelectorAll('.custom-modal').forEach(dialog => {
-            dialog.addEventListener('click', e => { 
-                const rect = dialog.getBoundingClientRect();
-                const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
-                                    rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-                if (!isInDialog) {
-                    closeModal(dialog);
-                }
-            });
+            dialog.addEventListener('click', e => { if (e.target === dialog) closeModal(dialog); });
             dialog.addEventListener('cancel', e => { e.preventDefault(); closeModal(dialog); });
         });
 
