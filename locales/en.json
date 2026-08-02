@@ -12,7 +12,7 @@
   "nav_modal_fr": "",
   "nav_modal_tr": "",
 
-  "summary_text": "Self-motivated Computer Engineering (3rd year) and Industrial Engineering (4th year) double major student with experience in data science and analytics, and a strong interest in computer architecture and digital electronics.",
+  "summary_text": "Motivated 3rd-year Computer Engineering student and Industrial Engineering graduate (ranked top of my class). Experience in software engineering and data science, with a strong interest in computer architecture and digital electronics.",
   
   "btn_resume": "Resume",
   "resume_link": "src/resume.pdf",
@@ -24,8 +24,8 @@
   "edu_gpa": "GPA:",
   "edu_1_title": "Galatasaray University",
   "edu_1_sub": "Industrial Engineering",
-  "edu_1_badge1": "4th year",
-  "edu_1_date": "2021 – Present",
+  "edu_1_badge1": "Valedictorian",
+  "edu_1_date": "2021 – 2026",
   "edu_1_loc": "Istanbul, Turkey",
 
   "edu_2_title": "Galatasaray University",
@@ -90,9 +90,9 @@
   "prj_1_title": "Conception of AI integrated Industry 5.0 Smart Manufacturing Systems",
   "prj_1_sub": "Galatasaray University",
   "prj_1_badge1": "Undergraduate Thesis",
-  "prj_1_date": "Feb. 2026 – Present",
-  "prj_1_desc_1": "Developing an Industry 5.0 smart manufacturing system integrated with multi-agent artificial intelligence systems to achieve autonomous, real-time reasoning on production lines.",
-  "prj_1_desc_2": "Utilizing deep learning, collaborative robotics, large language models with retrieval-augmented generation and digital twins throughout the project.",
+  "prj_1_date": "Feb. 2026 – Jun. 2026",
+  "prj_1_desc_1": "Developed an Industry 5.0 smart manufacturing system integrated with multi-agent artificial intelligence systems to achieve autonomous, real-time reasoning on production lines.",
+  "prj_1_desc_2": "Utilized deep learning, large language models with retrieval-augmented generation and digital twins throughout the project.",
 
   "prj_2_title": "Projet 2A: Légumerie Facility Planning",
   "prj_2_sub": "Michelin &amp; SIGMA Clermont",

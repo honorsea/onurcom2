@@ -12,7 +12,7 @@
   "nav_modal_fr": "active",
   "nav_modal_tr": "",
 
-  "summary_text": "Étudiant motivé en double diplôme en génie informatique (3e année) et en génie industriel (4e année), possédant une expérience en science des données, et manifestant un vif intérêt pour l'architecture informatique et l'électronique.",
+  "summary_text": "Étudiant motivé en génie informatique (3e année) et diplômé en génie industriel (major de promotion), possédant une expérience en science des données, et manifestant un vif intérêt pour l'architecture informatique et l'électronique.",
   
   "btn_resume": "CV",
   "resume_link": "src/resume.pdf",
@@ -24,8 +24,8 @@
   "edu_gpa": "Moyenne :",
   "edu_1_title": "Université Galatasaray",
   "edu_1_sub": "Génie Industriel",
-  "edu_1_badge1": "4e année",
-  "edu_1_date": "2021 – Présent",
+  "edu_1_badge1": "Major de promotion",
+  "edu_1_date": "2021 – 2026",
   "edu_1_loc": "Istanbul, Turquie",
 
   "edu_2_title": "Université Galatasaray",
@@ -90,9 +90,9 @@
   "prj_1_title": "Conception de systèmes de fabrication intelligente Industrie 5.0 intégrés à l'IA",
   "prj_1_sub": "Université Galatasaray",
   "prj_1_badge1": "Thèse de fin d'études",
-  "prj_1_date": "Fév. 2026 – Présent",
+  "prj_1_date": "Fév. 2026 – Juin 2026",
   "prj_1_desc_1": "Développement d'un système de production intelligent Industrie 5.0 intégré à des systèmes d'IA multi-agents pour un raisonnement autonome en temps réel sur les lignes de production.",
-  "prj_1_desc_2": "Utilisation du deep learning, de la robotique collaborative, des LLM avec RAG (Retrieval-Augmented Generation) et des jumeaux numériques.",
+  "prj_1_desc_2": "Utilisation du deep learning, des LLM avec RAG (Retrieval-Augmented Generation) et des jumeaux numériques.",
 
   "prj_2_title": "Projet 2A : Planification d'une installation de légumerie",
   "prj_2_sub": "Michelin & SIGMA Clermont",

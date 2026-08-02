@@ -12,7 +12,7 @@
   "nav_modal_fr": "",
   "nav_modal_tr": "active",
 
-  "summary_text": "Azimli ve motivasyonu yüksek, veri bilimi alanında deneyimli, bilgisayar mimarisi ile sayısal elektroniğe ilgi duyan Bilgisayar Mühendisliği 3. sınıf ve Endüstri Mühendisliği 4. sınıf çift anadal öğrencisi.",
+  "summary_text": "Azimli ve motivasyonu yüksek Bilgisayar Mühendisliği 3. sınıf öğrencisi ve Endüstri Mühendisliği bölüm birincisi mezunu. Veri bilimi ile yazılım geliştirme alanlarında deneyimli ve bilgisayar mimarisi ile sayısal elektroniğe ilgili.",
   
   "btn_resume": "Özgeçmiş",
   "resume_link": "src/resume.pdf",
@@ -24,8 +24,8 @@
   "edu_gpa": "GANO:",
   "edu_1_title": "Galatasaray Üniversitesi",
   "edu_1_sub": "Endüstri Mühendisliği",
-  "edu_1_badge1": "4. Sınıf",
-  "edu_1_date": "2021 – Günümüz",
+  "edu_1_badge1": "Bölüm Birincisi",
+  "edu_1_date": "2021 – 2026",
   "edu_1_loc": "İstanbul, Türkiye",
 
   "edu_2_title": "Galatasaray Üniversitesi",
@@ -87,12 +87,12 @@
 
   "sec_projects": "PROJELER",
 
-  "prj_1_title": "Yapay Zeka Entegre Endüstri 5.0 Akıllı Üretim Sistemleri Tasarımı",
+  "prj_1_title": "Yapay Zeka Destekli Endüstri 5.0 Akıllı Üretim Sistemlerinin Tasarımı",
   "prj_1_sub": "Galatasaray Üniversitesi",
   "prj_1_badge1": "Bitirme Projesi",
-  "prj_1_date": "Şub 2026 – Günümüz",
-  "prj_1_desc_1": "Üretim hatlarında otonom ve gerçek zamanlı akıl yürütme sağlamak amacıyla çoklu ajan yapay zeka sistemleriyle entegre bir akıllı üretim sistemi geliştiriyorum.",
-  "prj_1_desc_2": "Proje kapsamında derin öğrenme, kolaboratif robotik, RAG destekli büyük dil modelleri ve dijital ikiz teknolojileri kullanıyorum.",
+  "prj_1_date": "Şub 2026 – Haz 2026",
+  "prj_1_desc_1": "Üretim hatlarında otonom ve gerçek zamanlı akıl yürütme sağlamak amacıyla çoklu ajan yapay zeka sistemleriyle entegre bir akıllı üretim sistemi geliştirdim.",
+  "prj_1_desc_2": "Proje kapsamında derin öğrenme, RAG destekli büyük dil modelleri ve dijital ikiz teknolojileri kullandım.",
 
   "prj_2_title": "Projet 2A: Légumerie Tesis Planlama",
   "prj_2_sub": "Michelin & SIGMA Clermont",
